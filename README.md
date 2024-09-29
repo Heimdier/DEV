@@ -21,6 +21,22 @@ https://hub.docker.com/repository/docker/maibenben/custom-nginx/general
 ![task-5](https://github.com/user-attachments/assets/c283a735-f6d8-405b-b9b6-e610b20a98ed)
 был запущен compose.yaml так как он имеет больший приоритет, если нет compose.yaml то запустится если есть docker-compose.yaml 
 
+# Отредактировал файл compose.yaml
+version: "3"
+include:
+  - docker-compose.yaml
+services:
+  portainer:
+    image: portainer/portainer-ce:latest
+    network_mode: host
+    ports:
+      - "9000:9000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - registry
+   
+  ![image](https://github.com/user-attachments/assets/8e431060-4b0f-402b-a40c-2c47bccf20f3)
 
 
 
