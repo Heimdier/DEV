@@ -25,5 +25,8 @@ https://hub.docker.com/repository/docker/maibenben/custom-nginx/general
 ![image](https://github.com/user-attachments/assets/7720f42f-faf0-4f84-acb9-15b5452c37e3)
 ![image](https://github.com/user-attachments/assets/8e431060-4b0f-402b-a40c-2c47bccf20f3)
 
+залил custom-nginx в локальный registry
+![image](https://github.com/user-attachments/assets/336c5d7f-348b-41c3-a138-9e56443e9a1c)
+
 
 
