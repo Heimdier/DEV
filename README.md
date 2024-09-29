@@ -11,6 +11,16 @@ https://hub.docker.com/repository/docker/maibenben/custom-nginx/general
 
 ![2024-09-29_12-57-17](https://github.com/user-attachments/assets/20c132cf-7d64-4b5f-b18c-6b5124b225a1)
 ![2024-09-29_13-08-31](https://github.com/user-attachments/assets/da888784-af3a-409c-8a04-a936ee85277e)
-![2024-09-29_13-29-23](https://github.com/user-attachments/assets/a5b85822-bde5-40f2-8174-0db8e6d27fb0)
+![2024-09-29_13-45-19](https://github.com/user-attachments/assets/d9c2d702-f35d-435c-b2a3-f9676c3519b5)
 в контейнер nginx стал слушать порт 81 вместо 80, а на хосте маппинг настроен на порт 80. После остановки контейнера и правки конфига с маппингом на порт 81 страница nginx снова стала открываться
+
+Задача 4
+![task-4](https://github.com/user-attachments/assets/6bc758e5-5e68-4731-8639-2fc6a5425f7b)
+
+Задача 5
+![task-5](https://github.com/user-attachments/assets/c283a735-f6d8-405b-b9b6-e610b20a98ed)
+был запущен compose.yaml так как он имеет больший приоритет, если нет compose.yaml то запустится если есть docker-compose.yaml 
+
+
+
 
