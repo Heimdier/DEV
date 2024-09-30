@@ -28,5 +28,17 @@ https://hub.docker.com/repository/docker/maibenben/custom-nginx/general
 залил custom-nginx в локальный registry
 ![image](https://github.com/user-attachments/assets/336c5d7f-348b-41c3-a138-9e56443e9a1c)
 
+задеплоил компоуз nginx через portainer
+![2024-09-30_14-15-48](https://github.com/user-attachments/assets/e78f90a2-e6d4-4aaa-84f5-a8c9b65eb5fd)
+
+inspect контейнера с nginx
+![2024-09-30_14-28-58](https://github.com/user-attachments/assets/11e0b1f5-91b4-4f5d-9b92-f987fb43f7b7)
+
+удалил compose.yaml и запустил docker compose up -d
+![2024-09-30_14-38-09](https://github.com/user-attachments/assets/709cada6-270e-4b9e-b63e-8d1211245ab7)
+возник warning что есть запущенный контейнер не описанный в compose файлах
+с помощью ключа --remove-orphans удаляется контенер tmp-portainer-1 которого нет в компоуз файле
+![2024-09-30_14-55-32](https://github.com/user-attachments/assets/6d96fc46-8937-4b90-b694-9877263106c0)
+
 
 
