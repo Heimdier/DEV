@@ -23,3 +23,6 @@ docker ps после выполнения кода Terraform
 ![2024-10-19_12-57-40](https://github.com/user-attachments/assets/621af6af-1216-4e19-be7a-92950dc45e51)
 
 -auto-approve выполняет команду terraform apply без ручного подтверждения админа, таким образом можно по ошибке поломать продакшн если в конфиге есть ошибочные действия
+
+docker ps после изменения имени контейнера и -auto-approve
+![image](https://github.com/user-attachments/assets/fe3c7506-f4f6-4cde-88df-524e46ba7e2b)
