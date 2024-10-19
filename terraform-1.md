@@ -33,3 +33,7 @@ docker ps после изменения имени контейнера и -auto
 содержимое terraform.tfstate
 ![image](https://github.com/user-attachments/assets/1585f036-ca0c-4da2-b8fb-8049b83bac41)
 
+docker-образ nginx:latest не был удален т.к. в main.tf применен параметр keep_locally = true
+![image](https://github.com/user-attachments/assets/70f8f046-3619-4552-ac52-8f62889ea821)
+
+
