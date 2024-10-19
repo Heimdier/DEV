@@ -14,7 +14,10 @@
 ![2024-10-18_07-47-52](https://github.com/user-attachments/assets/7639b0e4-2e72-4a35-b47b-2ce865416860)
 ![2024-10-18_07-47-19](https://github.com/user-attachments/assets/1cc50ef2-eb69-44f7-9a26-e8cb3404dbdf)
 
+docker ps после выполнения кода Terraform
+![2024-10-19_12-49-51](https://github.com/user-attachments/assets/c1ceca0f-1b65-45d2-bd57-2881de4fd616)
 
-
+поменял имя докер контейнера
+![2024-10-19_12-57-40](https://github.com/user-attachments/assets/621af6af-1216-4e19-be7a-92950dc45e51)
 
 
