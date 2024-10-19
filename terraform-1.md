@@ -26,3 +26,10 @@ docker ps после выполнения кода Terraform
 
 docker ps после изменения имени контейнера и -auto-approve
 ![image](https://github.com/user-attachments/assets/fe3c7506-f4f6-4cde-88df-524e46ba7e2b)
+
+уничтожил ресурсы
+![image](https://github.com/user-attachments/assets/9c15a350-9538-4a6a-b325-ee47147f3715)
+
+содержимое terraform.tfstate
+![image](https://github.com/user-attachments/assets/1585f036-ca0c-4da2-b8fb-8049b83bac41)
+
