@@ -11,6 +11,8 @@
 
 ![2024-10-18_07-40-48](https://github.com/user-attachments/assets/93d14d54-8242-4d3c-a12f-991c5286e168)
 <img width="438" alt="2024-10-18_07-44-00" src="https://github.com/user-attachments/assets/245866fd-d3f7-449c-a2d2-a81edf1f5f1a">
+
+после исправления ошибок validate завершается успешно
 ![2024-10-18_07-47-52](https://github.com/user-attachments/assets/7639b0e4-2e72-4a35-b47b-2ce865416860)
 ![2024-10-18_07-47-19](https://github.com/user-attachments/assets/1cc50ef2-eb69-44f7-9a26-e8cb3404dbdf)
 
