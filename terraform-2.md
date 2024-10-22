@@ -1,4 +1,4 @@
-Задание 1
+--- Задание 1 ---
 
 terraform не понимает знак домашнего каталога - нужно заменить на полный путь к файлу .json
 ![image](https://github.com/user-attachments/assets/30cc211d-2972-440d-adea-4f17445f9d0e)
@@ -16,5 +16,17 @@ ip address с терминала
 core_fraction - гарантированный процент производительности CPU от максимальной.    
 preemptible true - виртуалка в любой момент может быть остановлена яндексом.   
 Используя эти параметры можно значительно снизить стоимость аренды виртуалок и сэкономить деньги гранта от яндекса
+
+--- Задание 2 ---
+создал переменные в  variables.tf.  
+![image](https://github.com/user-attachments/assets/9e57251b-724f-4a72-b9af-9ad3685742e5)
+
+подменил хард коре значения переменными в main.tf.   
+![image](https://github.com/user-attachments/assets/1462ee4a-a72b-4cce-a869-d3e7a66033c8)
+
+terraform plan изменений не почувствовал.  
+![image](https://github.com/user-attachments/assets/6dafcd5b-567f-4c7e-a694-0fe8f5d04b6d)
+
+
 
 
