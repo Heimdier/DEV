@@ -21,7 +21,7 @@ preemptible true - виртуалка в любой момент может бы
 создал переменные в  variables.tf.  
 ![image](https://github.com/user-attachments/assets/9e57251b-724f-4a72-b9af-9ad3685742e5)
 
-подменил хард коре значения переменными в main.tf.   
+подменил хард кор значения переменными в main.tf.   
 ![image](https://github.com/user-attachments/assets/1462ee4a-a72b-4cce-a869-d3e7a66033c8)
 
 terraform plan изменений не почувствовал.  
