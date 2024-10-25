@@ -36,7 +36,16 @@ terraform plan изменений не почувствовал.
 объявил вторую ВМ в файле main.tf: "netology-develop-platform-db" 
 ![image](https://github.com/user-attachments/assets/2ee50c01-6346-4c47-addb-63ac9eeca1fb)
 ![image](https://github.com/user-attachments/assets/4c6d42df-bdbb-4dcb-adcb-dcd28fcb1d51)
+применил - получил вторую ВМ в зоне "ru-central1-b"
 ![2024-10-23_07-26-19](https://github.com/user-attachments/assets/8f429eb7-9ba9-4e42-a1eb-aaade09e1cb8)
+
+------------ Задание 4 ----------
+объявил в файле outputs.tf переменные instance_name, external_ip, fqdn для каждой из ВМ   
+![image](https://github.com/user-attachments/assets/1574712f-f979-4308-8e84-d18578b0f468)
+вывод для внешних ip адресов ВМ:     
+![image](https://github.com/user-attachments/assets/f5ff6a43-e66a-408b-abd7-2dd45f7abd51)
+
+------------ Задание 5 ----------
 
 
 
