@@ -1,4 +1,4 @@
---- Задание 1 ---
+------------ Задание 1 ---
 
 terraform не понимает знак домашнего каталога - нужно заменить на полный путь к файлу .json
 ![image](https://github.com/user-attachments/assets/30cc211d-2972-440d-adea-4f17445f9d0e)
@@ -17,15 +17,33 @@ core_fraction - гарантированный процент производи
 preemptible true - виртуалка в любой момент может быть остановлена яндексом.   
 Используя эти параметры можно значительно снизить стоимость аренды виртуалок и сэкономить деньги гранта от яндекса
 
----------- Задание 2 ---     
+------------ Задание 2 ---     
 создал переменные в  variables.tf.  
 ![image](https://github.com/user-attachments/assets/9e57251b-724f-4a72-b9af-9ad3685742e5)
 
-подменил хард кор значения переменными в main.tf.   
+подменил хард код значения переменными в main.tf.   
 ![image](https://github.com/user-attachments/assets/1462ee4a-a72b-4cce-a869-d3e7a66033c8)
 
 terraform plan изменений не почувствовал.  
 ![image](https://github.com/user-attachments/assets/6dafcd5b-567f-4c7e-a694-0fe8f5d04b6d)
+
+------------ Задание 3 ----------
+
+создал файл vms_platform.tf с переменными для netology-develop-platform-db     
+![image](https://github.com/user-attachments/assets/e98aa8e4-373d-4362-b803-aa5454006df7)
+![image](https://github.com/user-attachments/assets/9a02e6b0-f4b4-4f1b-b96a-3edf33a61082)
+
+объявил вторую ВМ в файле main.tf: "netology-develop-platform-db" 
+![image](https://github.com/user-attachments/assets/2ee50c01-6346-4c47-addb-63ac9eeca1fb)
+![image](https://github.com/user-attachments/assets/4c6d42df-bdbb-4dcb-adcb-dcd28fcb1d51)
+![2024-10-23_07-26-19](https://github.com/user-attachments/assets/8f429eb7-9ba9-4e42-a1eb-aaade09e1cb8)
+
+
+
+
+
+
+
 
 
 
