@@ -46,6 +46,17 @@ terraform plan изменений не почувствовал.
 ![image](https://github.com/user-attachments/assets/f5ff6a43-e66a-408b-abd7-2dd45f7abd51)
 
 ------------ Задание 5 ----------    
+создал локальные переменные с интерполяцией     
+![image](https://github.com/user-attachments/assets/4d8a7856-05de-4a2c-98a8-1c6c298356a0)
+
+подменил в main.tf на локальные переменные    
+![image](https://github.com/user-attachments/assets/13233a16-c482-4d58-bbce-97a1506c8532)
+
+применил с новыми именами       
+![Uploading image.png…]()
+
+
+
 
 
 
