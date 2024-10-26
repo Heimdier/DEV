@@ -53,7 +53,8 @@ terraform plan изменений не почувствовал.
 ![image](https://github.com/user-attachments/assets/13233a16-c482-4d58-bbce-97a1506c8532)
 
 применил с новыми именами       
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/9d78de6b-1f8b-4f48-8ab1-6b23d12778fc)
+
 
 
 
