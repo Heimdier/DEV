@@ -55,6 +55,29 @@ terraform plan изменений не почувствовал.
 применил с новыми именами       
 ![image](https://github.com/user-attachments/assets/9d78de6b-1f8b-4f48-8ab1-6b23d12778fc)
 
+------------ Задание 6 ----------    
+создал map переменную с вложенными map(object) для ".._cores",".._memory",".._core_fraction"   
+![image](https://github.com/user-attachments/assets/58a9d553-516e-4083-a76a-dff98d9a095f)
+
+подменил в main.tf на map переменные     
+![image](https://github.com/user-attachments/assets/e6559fb9-3c9f-4533-a6e1-1f948dfdb4fa)
+![image](https://github.com/user-attachments/assets/0d575020-0e99-4083-90a2-b151556d9ea9)
+
+Создал map(object) переменную для блока metadata    
+![image](https://github.com/user-attachments/assets/957dee95-c341-409a-88cd-b0ddb85ad4f0)
+
+заменил в main.tf    
+![image](https://github.com/user-attachments/assets/14823b75-5e17-4d0d-a8df-39086280d433)
+
+terraform plan ошибок не обнаружил   
+
+
+
+
+
+
+
+
 
 
 
