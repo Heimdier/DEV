@@ -1,0 +1,26 @@
+
+  
+  
+  
+  
+  [webservers]
+  
+  web-1   ip_public = 89.169.132.203  fqdn = web-1.ru-central1.internal
+  
+  web-2   ip_public = 89.169.130.39  fqdn = web-2.ru-central1.internal
+  
+  
+  
+   
+  [database]
+  
+  main   ip_public = 89.169.157.132  fqdn = main.ru-central1.internal
+  
+  replica   ip_public = 62.84.124.114  fqdn = replica.ru-central1.internal
+  
+  
+  
+  
+  [storage]
+  storage   ip_public = 89.169.159.221  fqdn = storage.ru-central1.internal
+  

@@ -1,0 +1,22 @@
+
+  
+  
+  
+  %{if length(webservers) > 0}
+  [webservers]
+  %{for i in webservers }
+  ${i["name"]}   ip_public = ${i["network_interface"][0]["nat_ip_address"]}  fqdn = ${i["fqdn"]}
+  %{endfor}
+  %{endif}
+  
+   %{if length(database) > 0}
+  [database]
+  %{for i in database }
+  ${i["name"]}   ip_public = ${i["network_interface"][0]["nat_ip_address"]}  fqdn = ${i["fqdn"]}
+  %{endfor}
+  %{endif}
+  
+  %{if length(storage) > 0}
+  [storage]
+  ${storage["name"]}   ip_public = ${storage["network_interface"][0]["nat_ip_address"]}  fqdn = ${storage["fqdn"]}
+  %{endif}
