@@ -27,7 +27,7 @@
  hosts.tftpl     
  ![image](https://github.com/user-attachments/assets/93b0fb8d-0ed7-49c2-a895-e4bc77829aa3)   
 
- полученный inventory файл    
+ полученный inventory файл c добавленным FQDN   
  ![image](https://github.com/user-attachments/assets/46afce47-95a3-462e-aec3-5cc097029252)
 
 
