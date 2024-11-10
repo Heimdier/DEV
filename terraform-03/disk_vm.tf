@@ -36,7 +36,7 @@ resource "yandex_compute_instance" "storage" {
    dynamic "secondary_disk" {
     for_each = yandex_compute_disk.musket
     content {
-      disk_id     =  yandex_compute_disk.musket[secondary_disk.key].id
+      disk_id     =  lookup(secondary_disk.value, "id", null)
     }
   }
 
