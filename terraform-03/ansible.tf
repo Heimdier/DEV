@@ -4,7 +4,7 @@ resource "local_file" "ansible_inventory" {
     {
     webservers = yandex_compute_instance.web,
     database = yandex_compute_instance.db,
-    storage = yandex_compute_instance.storage
+    storage = yandex_compute_instance.storage.*
     }
   )
   filename = "inventory"
