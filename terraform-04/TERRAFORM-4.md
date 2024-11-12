@@ -6,4 +6,24 @@
 
 
 
+описал переменные для передачи в cloud-init.yml    
+![image](https://github.com/user-attachments/assets/85d4054a-baf8-4de8-8835-3f0f9eefea40)
+
+в cloud-init.yml передал эти переменные и добавил установку nginx  
+![image](https://github.com/user-attachments/assets/5de036c6-fcdf-4f85-877b-af1ee57c93f1)
+
+полученные тачки:   
+![image](https://github.com/user-attachments/assets/17d8e6fe-cc97-4acc-829f-5a97ba4c1072)
+
+залогинился в созданную ВМ и проверил что nginx на месте    
+![image](https://github.com/user-attachments/assets/ba9a5faa-1539-4836-b427-52a566011f7f)
+
+
+
+
+
+
+
+
+
 
