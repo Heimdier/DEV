@@ -20,6 +20,8 @@
 
 
 ----- Задание 2 -----   
+Описал локальный модуль vpc, который создает 1 сеть и 1 подсеть в зоне ru-central1-a    
+![image](https://github.com/user-attachments/assets/c482c253-5e78-4120-afb5-0b56ff89fe50)
 
 передал в модуль VPC переменные с названием сети, zone и v4_cidr_blocks   
 ![image](https://github.com/user-attachments/assets/bdc0de7f-5387-4f1f-b7a1-d537cdf1c1b2)
