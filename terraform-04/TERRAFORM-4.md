@@ -26,6 +26,9 @@
 передал в модуль VPC переменные с названием сети, zone и v4_cidr_blocks   
 ![image](https://github.com/user-attachments/assets/bdc0de7f-5387-4f1f-b7a1-d537cdf1c1b2)
 
+в output.tf модуль возвращает созданную сеть и подсеть    
+![image](https://github.com/user-attachments/assets/48c8671f-ecc4-40d9-ac5e-df8498126049)
+
 скриншот из terraform console о созданном модуле vpc:
 ![image](https://github.com/user-attachments/assets/eb69d04f-2fa4-4740-93e5-a3e3fd7ef55f)
 
