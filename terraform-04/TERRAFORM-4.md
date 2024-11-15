@@ -19,6 +19,12 @@
 ![image](https://github.com/user-attachments/assets/ba9a5faa-1539-4836-b427-52a566011f7f)
 
 
+----- Задание 2 -----   
+
+
+
+скриншот из terraform console о созданном модуле vpc:
+![image](https://github.com/user-attachments/assets/eb69d04f-2fa4-4740-93e5-a3e3fd7ef55f)
 
 
 
