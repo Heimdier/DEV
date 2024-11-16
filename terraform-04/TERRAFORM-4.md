@@ -1,10 +1,8 @@
 ----- Задание 1 -----   
 создал 2 ВМ с помощью вызова двух remote-модулей с label (marketing и analytics)    
 
-![image](https://github.com/user-attachments/assets/ee29eb54-b415-48cc-85ec-5f94a9d926c1)
-![image](https://github.com/user-attachments/assets/f9e358c8-3d82-4cdd-af17-517b0061a5aa)
-
-
+![image](https://github.com/user-attachments/assets/be2c9aae-ad35-44e8-b1c7-f68b596fcee0)
+![image](https://github.com/user-attachments/assets/8ff9520b-8386-4531-9861-e8c889ce446a)
 
 описал переменные для передачи в cloud-init.yml    
 ![image](https://github.com/user-attachments/assets/85d4054a-baf8-4de8-8835-3f0f9eefea40)
