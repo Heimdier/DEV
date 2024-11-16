@@ -32,6 +32,8 @@
 скриншот из terraform console о созданном модуле vpc:
 ![image](https://github.com/user-attachments/assets/eb69d04f-2fa4-4740-93e5-a3e3fd7ef55f)
 
+заменил сеть и подсеть на те что создал в модуле VPC    
+![image](https://github.com/user-attachments/assets/ddc4e511-d0e3-44e3-b315-2f564d9d2cbd)
 
 
 
