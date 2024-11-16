@@ -44,7 +44,15 @@
  удалил из стейта модуль vpc:   
  ![image](https://github.com/user-attachments/assets/8275785b-ffbd-44a3-973c-eb3271d6a1b7)
  
- удалил из стейта модуль vm   
+ удалил из стейта модуль test-vm   
+ ![image](https://github.com/user-attachments/assets/a0d4f03a-db7e-40b1-9e9f-8d59af5efcc9)
+
+ одумался и импортировал в стейт всё обратно )  
+ ![image](https://github.com/user-attachments/assets/747836b9-d53c-4e16-8a90-6759ec8a7cad)
+
+ terraform plan съел импортированные модули   
+ ![image](https://github.com/user-attachments/assets/2fcee985-d694-4ce3-b261-16e6462782ee)
+
 
 
 
