@@ -38,6 +38,17 @@
 сгенерил описание с помощью terraform-docs (файл docs.md)
 
 ----- Задание 3 -----  
+ список ресурсов в стейте:   
+ ![image](https://github.com/user-attachments/assets/d90dfb4b-179d-4f13-a348-42a7aee70ec7)
+
+ удалил из стейта модуль vpc:   
+ ![image](https://github.com/user-attachments/assets/8275785b-ffbd-44a3-973c-eb3271d6a1b7)
+ 
+ удалил из стейта модуль vm   
+
+
+
+ 
 
 
 
