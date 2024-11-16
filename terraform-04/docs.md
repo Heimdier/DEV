@@ -9,7 +9,6 @@
 | Name | Version |
 |------|---------|
 | <a name="provider_template"></a> [template](#provider\_template) | 2.2.0 |
-| <a name="provider_yandex"></a> [yandex](#provider\_yandex) | 0.132.0 |
 
 ## Modules
 
@@ -23,8 +22,6 @@
 
 | Name | Type |
 |------|------|
-| [yandex_vpc_network.develop](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs/resources/vpc_network) | resource |
-| [yandex_vpc_subnet.develop_a](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs/resources/vpc_subnet) | resource |
 | [template_file.cloudinit](https://registry.terraform.io/providers/hashicorp/template/latest/docs/data-sources/file) | data source |
 
 ## Inputs
