@@ -35,7 +35,7 @@
 заменил сеть и подсеть на те что создал в модуле VPC    
 ![image](https://github.com/user-attachments/assets/ddc4e511-d0e3-44e3-b315-2f564d9d2cbd)
 
-
+сгенерил описание с помощью terraform-docs (файл docs.md)
 
 
 
