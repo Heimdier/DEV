@@ -14,6 +14,12 @@
 7. При помощи `ansible-vault` зашифровал факты в `group_vars/deb` и `group_vars/el`
 ![image](https://github.com/user-attachments/assets/5345548d-868c-4372-b9a1-3480906b4ee3)
 
+8. Запустил playbook на окружении `prod.yml` с запросом пароля от vault   
+![image](https://github.com/user-attachments/assets/679a77be-cc73-453b-841f-3e3b5ba231a0)
+
+
+
+
 
 
 
