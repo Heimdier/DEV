@@ -12,20 +12,24 @@
 
 -------- Задание 2 ----------    
 
- настроил YDB, S3 bucket, yandex service account    
+ прописал в provider.tf S3 bucket 
  
 ![image](https://github.com/user-attachments/assets/48907078-802d-4663-a4c4-689055505671)
 
-смигрировал state в мой бакет и выполнил apply         
-![image](https://github.com/user-attachments/assets/c0ec899a-53a3-4fe8-8146-52d2cd9ce199)
+смигрировал state в мой бакет и выполнил apply       
 
-в таблице блокировок появилась запись    
+![image](https://github.com/user-attachments/assets/29e38d30-6272-4cec-bf01-9c4cbf5d7ff1)
+
+в таблице блокировок появилась запись 
+
 ![image](https://github.com/user-attachments/assets/bf19ce69-b426-45a3-9e75-35930e7a6ce2)
 
-заблокировал state открыв terraform console    
+заблокировал state открыв terraform console  
+
 ![image](https://github.com/user-attachments/assets/a368ba6c-be38-48ed-9f3e-234df5eae02b)
 
 из другого окна запустил apply и получил отказ с сообщением о заблокированном state    
+
 ![image](https://github.com/user-attachments/assets/f30fa9a0-4a54-4a37-9865-93061a4c82b0)
 
 
