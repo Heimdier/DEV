@@ -9,4 +9,13 @@
 - переменные объявлены но не используются
 - рекомендуется использовать ссылки на Git с указанием ревизии хэша коммита
 
-- 
+
+-------- Задание 2 ----------
+ настроил YDB, S3 bucket, yandex service account и смигрировал state в мой бакет   
+![image](https://github.com/user-attachments/assets/48907078-802d-4663-a4c4-689055505671)
+
+ 
+![image](https://github.com/user-attachments/assets/adda074f-40df-4991-a568-8330c1cdf729)
+
+ 
+
