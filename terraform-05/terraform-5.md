@@ -15,8 +15,25 @@
  настроил YDB, S3 bucket, yandex service account и смигрировал state в мой бакет   
 ![image](https://github.com/user-attachments/assets/48907078-802d-4663-a4c4-689055505671)
 
+выполнил apply с блокировкой    
+![image](https://github.com/user-attachments/assets/c0ec899a-53a3-4fe8-8146-52d2cd9ce199)
+
+в таблице блокировок появилась запись    
+![image](https://github.com/user-attachments/assets/bf19ce69-b426-45a3-9e75-35930e7a6ce2)
+
+заблокировал state открыв terraform console    
+![image](https://github.com/user-attachments/assets/451f6847-28ae-4e42-abac-9abe14db3338)
+
+из другого окна запустил apply и получил отказ с сообщением о заблокированном state    
+![image](https://github.com/user-attachments/assets/f30fa9a0-4a54-4a37-9865-93061a4c82b0)
+
+
+
+
+
+
+
  
-![image](https://github.com/user-attachments/assets/adda074f-40df-4991-a568-8330c1cdf729)
 
  
 
