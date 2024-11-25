@@ -1,13 +1,16 @@
 -------- Задание 1 ----------
 
-натравил TFLINT и checkov на 04/src и 04/demonstration1    
+натравил TFLINT и checkov на 04/src и 04/demonstration1  
+
 ![image](https://github.com/user-attachments/assets/990b3f8b-1256-4706-9282-90677ee5fb98)
 ![image](https://github.com/user-attachments/assets/0575ee0e-54cf-4470-bf53-9246bffbbbce)
+![image](https://github.com/user-attachments/assets/46ad149b-ed0a-4ad2-b898-028d0aeff639)
 
 обнаруженные ошибки:
 - не указана версия провайдера
 - переменные объявлены но не используются
 - рекомендуется использовать ссылки на Git с указанием ревизии хэша коммита
+- не назначена security group для network интерфейса
 
 
 -------- Задание 2 ----------    
