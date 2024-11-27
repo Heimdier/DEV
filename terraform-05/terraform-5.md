@@ -33,7 +33,19 @@
 
 из другого окна запустил apply и получил отказ с сообщением о заблокированном state    
 
-![image](https://github.com/user-attachments/assets/f30fa9a0-4a54-4a37-9865-93061a4c82b0)
+![image](https://github.com/user-attachments/assets/f30fa9a0-4a54-4a37-9865-93061a4c82b0)  
+
+-------- Задание 3 ----------    
+
+перешел на ветку terraform-hotfix
+
+![image](https://github.com/user-attachments/assets/2c270bda-2af7-416b-abdf-f32772583d8a)
+
+натравил tflint и checkov      
+
+![image](https://github.com/user-attachments/assets/362700b1-b60f-41dd-984b-c63ba15f548a)
+
+
 
 
 
