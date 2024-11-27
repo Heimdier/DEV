@@ -47,8 +47,9 @@
 ![image](https://github.com/user-attachments/assets/b6d0a759-a0cd-409a-b483-0054d4fa2931)
 
 
-
-
+- создал новый pull request 'terraform-hotfix' --> 'terraform-05'. 
+- Вставьте в комментарий PR результат анализа tflint и checkov, план изменений инфраструктуры из вывода команды terraform plan.
+- Пришлите ссылку на PR для ревью. Вливать код в 'terraform-05' не нужно
 
 
 
