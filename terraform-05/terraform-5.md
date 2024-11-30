@@ -50,6 +50,26 @@
 Ссылка на PR https://github.com/Heimdier/DEV/pull/1
 
 
+-------- Задание 4 ---------- 
+
+описал переменные с валидацией:   
+
+![image](https://github.com/user-attachments/assets/3175eae2-ecba-49ee-83b3-329c8a5494b2)
+
+проверка с верными ip адресами в default:    
+
+![image](https://github.com/user-attachments/assets/b6696e2c-e284-45c1-aa9f-3ff237be9ace)
+
+проверка с косячными ip адресами в default:    
+
+![image](https://github.com/user-attachments/assets/1ee64424-6ec3-40ef-863b-8c4f33dfd7f9)
+
+
+
+
+
+
+
 
 
 
