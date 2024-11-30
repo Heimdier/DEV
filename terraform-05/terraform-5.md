@@ -46,7 +46,7 @@
 ![image](https://github.com/user-attachments/assets/362700b1-b60f-41dd-984b-c63ba15f548a)
 ![image](https://github.com/user-attachments/assets/b6d0a759-a0cd-409a-b483-0054d4fa2931)
 
-исправил ошибки и создал pull request на слияние веток 'terraform-hotfix' --> 'terraform-05'. 
+исправил ошибки и создал pull request на слияние веток 'terraform-hotfix' --> 'main'. 
 Ссылка на PR https://github.com/Heimdier/DEV/pull/1
 
 
