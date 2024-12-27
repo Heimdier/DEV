@@ -16,14 +16,14 @@
 ![image](https://github.com/user-attachments/assets/8e7bd9d6-f37f-4e29-a9f9-6f1f59eb3cad)   
 
 Запросы:     
-утилизация CPU для nodeexporter (в процентах, 100-idle);      
-100﻿ * ﻿(﻿1﻿ - ﻿avg﻿(﻿rate﻿(﻿node_cpu_seconds_total﻿{﻿instance﻿=﻿"nodeexporter:9100"﻿, ﻿job﻿=﻿"nodeexporter"﻿, ﻿mode﻿=﻿"idle"﻿}﻿[﻿1m﻿]﻿)﻿)﻿)
-CPULA 1/5/15;       
-node_load1, node_load5, node_load15
-количество свободной оперативной памяти;         
-node_memory_MemFree_bytes/1000000
-количество места на файловой системе.        
-(﻿node_filesystem_free_bytes﻿{﻿device﻿=﻿"/dev/sda2"﻿,﻿fstype﻿=﻿"ext4"﻿,﻿mountpoint﻿=﻿"/"﻿}﻿ ﻿)﻿/﻿1000000000
+- утилизация CPU для nodeexporter (в процентах, 100-idle);      
+- 100﻿ * ﻿(﻿1﻿ - ﻿avg﻿(﻿rate﻿(﻿node_cpu_seconds_total﻿{﻿instance﻿=﻿"nodeexporter:9100"﻿, ﻿job﻿=﻿"nodeexporter"﻿, ﻿mode﻿=﻿"idle"﻿}﻿[﻿1m﻿]﻿)﻿)﻿)
+- CPULA 1/5/15;       
+- node_load1, node_load5, node_load15
+- количество свободной оперативной памяти;         
+- node_memory_MemFree_bytes/1000000
+- количество места на файловой системе.        
+- (﻿node_filesystem_free_bytes﻿{﻿device﻿=﻿"/dev/sda2"﻿,﻿fstype﻿=﻿"ext4"﻿,﻿mountpoint﻿=﻿"/"﻿}﻿ ﻿)﻿/﻿1000000000
 
 ----- Задание 3 -----       
 
