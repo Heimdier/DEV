@@ -25,7 +25,14 @@
 - количество места на файловой системе.        
 - (﻿node_filesystem_free_bytes﻿{﻿device﻿=﻿"/dev/sda2"﻿,﻿fstype﻿=﻿"ext4"﻿,﻿mountpoint﻿=﻿"/"﻿}﻿ ﻿)﻿/﻿1000000000
 
------ Задание 3 -----       
+----- Задание 3 -----      
+создал Alert для каждой панели мониторинга     
+![image](https://github.com/user-attachments/assets/2c25a2e3-4c38-400f-9ed8-b1cf1b64060c)    
+
+----- Задание 4 -----      
+
+
+
 
 
 
