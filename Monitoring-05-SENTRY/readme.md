@@ -33,7 +33,12 @@ division_by_zero = 1 / 0
   ![image](https://github.com/user-attachments/assets/9a854460-d8df-4e30-8dac-c5b532e40d39)
 
 
------- Задание 3 ------
+------ Задание 3 ------    
+
+настроил алерты и сгенерил событие, на почту пришло сообщение по аларму    
+
+![image](https://github.com/user-attachments/assets/e2546bfa-4dca-492e-b11a-5bb20ebbeab2)
+
   
 
 
