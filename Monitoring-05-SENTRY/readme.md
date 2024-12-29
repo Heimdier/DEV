@@ -21,14 +21,19 @@ division_by_zero = 1 / 0
 
 
 - получил в сентри событие
-- 
+ 
   ![image](https://github.com/user-attachments/assets/0db03290-61f0-437a-8e2f-2452bb8bc5c9)
 
-  - сделал resolve
-  - 
+- сделал resolve
+   
     ![image](https://github.com/user-attachments/assets/2a7544d3-6179-4f59-81e5-2b55b4107f8f)
 
+- stack trace по ошибке
 
+  ![image](https://github.com/user-attachments/assets/9a854460-d8df-4e30-8dac-c5b532e40d39)
+
+
+------ Задание 3 ------
   
 
 
