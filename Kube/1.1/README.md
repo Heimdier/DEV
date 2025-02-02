@@ -19,5 +19,20 @@ microk8s enable dashboard
 ![image](https://github.com/user-attachments/assets/8366950c-1cc4-46dd-aebb-394d801fff41)
 
 
+--- Задание 2 ---   
+
+установил kubectl:   
+
+![image](https://github.com/user-attachments/assets/e2ffef3f-2438-4eb2-9a71-8fe126c36a06)
+
+скопировал конфиг micro8s в kubectl   
+![image](https://github.com/user-attachments/assets/e3a56891-1dfe-4b7d-9c1b-954865e50682)
+
+смотрим ноды и версии
+
+![image](https://github.com/user-attachments/assets/f9da2d1f-61fa-4e40-8bba-7929c7634259)
+
+
+
 
 
