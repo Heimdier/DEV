@@ -28,11 +28,16 @@ https://github.com/Heimdier/DEV/blob/main/Kube/1.2./net-pod.yml
 
 ![image](https://github.com/user-attachments/assets/27b8971c-1b4a-4e1a-bf50-17327204b91c)
 
+манифест для сервиса с лэйблами моих подов
+https://github.com/Heimdier/DEV/blob/main/Kube/1.2./service.yml
+
+поднял сервис    
+
+![image](https://github.com/user-attachments/assets/f74db858-c85b-410e-bc0c-ca7d5f7c4886)
+
+![image](https://github.com/user-attachments/assets/bca42c3d-d8a7-4dfe-b451-f4b817858cc2)
 
 
-
-
-Создать Service с именем netology-svc и подключить к netology-web.
 Подключиться локально к Service с помощью kubectl port-forward и вывести значение (curl или в браузере).
 
 
