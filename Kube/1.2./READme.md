@@ -28,7 +28,7 @@ https://github.com/Heimdier/DEV/blob/main/Kube/1.2./net-pod.yml
 
 ![image](https://github.com/user-attachments/assets/27b8971c-1b4a-4e1a-bf50-17327204b91c)
 
-манифест для сервиса с лэйблами моих подов
+манифест для сервиса с лэйбл пода netology-web     
 https://github.com/Heimdier/DEV/blob/main/Kube/1.2./service.yml
 
 поднял сервис    
