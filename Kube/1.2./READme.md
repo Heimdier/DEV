@@ -10,10 +10,11 @@ https://github.com/Heimdier/DEV/blob/main/Kube/1.2./echo-pod.yml
 ![image](https://github.com/user-attachments/assets/f431a6f8-d0cd-4108-a8c4-50096befd2af)
 
 сделал проброс порта для подключения к pod    
-![image](https://github.com/user-attachments/assets/88dd3ca2-0a89-4865-a4c0-7fd790574af2)
+![image](https://github.com/user-attachments/assets/fa2d7ec6-6f78-44f9-9a14-3801b3129e78)
 
+Подключился к Pod, смотрим что выдает    
+![image](https://github.com/user-attachments/assets/1c76b028-976a-4c55-838d-ab8d03c365f0)
 
-Подключился к Pod
 
 ---- Задание 2 ----
 
