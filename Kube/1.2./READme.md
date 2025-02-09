@@ -38,7 +38,7 @@ https://github.com/Heimdier/DEV/blob/main/Kube/1.2./service.yml
 
 к сервису подключен только netology-web pod    
 
-![image](https://github.com/user-attachments/assets/6fd1afcb-ed77-4456-a992-8e71ee64d6ae)
+![image](https://github.com/user-attachments/assets/c2efaa59-0201-4504-9ae1-cb8bff3cadbf)
 
 пробросил порт  
 
