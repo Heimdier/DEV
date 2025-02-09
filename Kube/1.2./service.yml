@@ -7,5 +7,5 @@ spec:
     app: net
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 9376
+      port: 8088
+      targetPort: 8080
