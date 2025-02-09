@@ -33,7 +33,8 @@ https://github.com/Heimdier/DEV/blob/main/Kube/1.2./service.yml
 
 поднял сервис    
 
-![image](https://github.com/user-attachments/assets/f74db858-c85b-410e-bc0c-ca7d5f7c4886)
+![image](https://github.com/user-attachments/assets/838b85d5-6615-4fac-b39d-f4051c377a71)
+![image](https://github.com/user-attachments/assets/da5171c6-e4dc-45bd-84f2-ac61ac0ce10c)
 
 к сервису подключен только netology-web pod    
 
