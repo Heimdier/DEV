@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: netology-web
   labels:
-    app: echo
+    app: net
 spec:
   containers:
   - image: gcr.io/kubernetes-e2e-test-images/echoserver:2.2
