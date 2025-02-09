@@ -35,10 +35,18 @@ https://github.com/Heimdier/DEV/blob/main/Kube/1.2./service.yml
 
 ![image](https://github.com/user-attachments/assets/f74db858-c85b-410e-bc0c-ca7d5f7c4886)
 
-![image](https://github.com/user-attachments/assets/bca42c3d-d8a7-4dfe-b451-f4b817858cc2)
+к сервису подключен только netology-web pod    
 
+![image](https://github.com/user-attachments/assets/6fd1afcb-ed77-4456-a992-8e71ee64d6ae)
 
-Подключиться локально к Service с помощью kubectl port-forward и вывести значение (curl или в браузере).
+пробросил порт  
+
+![image](https://github.com/user-attachments/assets/ca3caa8e-d094-4a6f-ac15-ac258be29c69)
+
+Подключился с браузера   
+
+![image](https://github.com/user-attachments/assets/10772000-3213-4c50-9201-a91c46e4e326)
+
 
 
 
