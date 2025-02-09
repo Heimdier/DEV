@@ -22,6 +22,7 @@ https://github.com/Heimdier/DEV/blob/main/Kube/1.2./echo-pod.yml
 ---- Задание 2 ----
 
 создал манифест для Pod с именем netology-web    
+https://github.com/Heimdier/DEV/blob/main/Kube/1.2./net-pod.yml
 
 поднял под:   
 
@@ -30,7 +31,7 @@ https://github.com/Heimdier/DEV/blob/main/Kube/1.2./echo-pod.yml
 
 
 
-Использовать image — gcr.io/kubernetes-e2e-test-images/echoserver:2.2.
+
 Создать Service с именем netology-svc и подключить к netology-web.
 Подключиться локально к Service с помощью kubectl port-forward и вывести значение (curl или в браузере).
 
