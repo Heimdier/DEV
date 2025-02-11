@@ -14,6 +14,14 @@
 
 ![image](https://github.com/user-attachments/assets/046d84d5-8617-4cbe-867f-0523a41e521f)
 
+добавил   replicas: 2  в манифест деплоиментс - реплика раскаталась успешно
+
+![image](https://github.com/user-attachments/assets/16a31df5-b44d-4760-9dc9-a546d9b02ea1)
+
+написал сервис с лейбл созданных выше подов      
+и запустил kubectl apply -f service-rep.yml  
+
+![image](https://github.com/user-attachments/assets/a6e6c502-bd56-42ef-bb1b-f09def08eaff)
 
 
 Создать Deployment приложения, состоящего из двух контейнеров — nginx и multitool. Решить возникшую ошибку.
