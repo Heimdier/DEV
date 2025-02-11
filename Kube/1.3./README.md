@@ -18,7 +18,7 @@
 
 ![image](https://github.com/user-attachments/assets/16a31df5-b44d-4760-9dc9-a546d9b02ea1)
 
-написал сервис с лейбл созданных выше подов      
+написал сервис с лейбл созданных выше подов   https://github.com/Heimdier/DEV/blob/main/Kube/1.3./service-rep.yml   
 и запустил kubectl apply -f service-rep.yml  
 
 ![image](https://github.com/user-attachments/assets/a6e6c502-bd56-42ef-bb1b-f09def08eaff)
