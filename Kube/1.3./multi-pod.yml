@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: one
+  name: toster
+spec:
+  containers:
+  - image: wbitt/network-multitool
+    name: toster
