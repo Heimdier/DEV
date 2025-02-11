@@ -23,6 +23,14 @@
 
 ![image](https://github.com/user-attachments/assets/a6e6c502-bd56-42ef-bb1b-f09def08eaff)
 
+написал манифест для пода под multitool, https://github.com/Heimdier/DEV/blob/main/Kube/1.3./multi-pod.yml  
+запустил
+
+![image](https://github.com/user-attachments/assets/d1758b1a-2ae9-4028-ac7c-3c39d70f5647)
+
+
+
+
 
 Создать Deployment приложения, состоящего из двух контейнеров — nginx и multitool. Решить возникшую ошибку.
 После запуска увеличить количество реплик работающего приложения до 2.
