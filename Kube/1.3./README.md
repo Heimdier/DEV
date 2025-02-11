@@ -1,6 +1,6 @@
 ---- Задание 1 ----   
 
-создал манифест на Deployment 
+создал манифест на Deployment https://github.com/Heimdier/DEV/blob/main/Kube/1.3./deploy.yml
 
 запустил   
 
