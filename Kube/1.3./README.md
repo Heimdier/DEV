@@ -44,18 +44,30 @@
 ![image](https://github.com/user-attachments/assets/401e01c6-5be3-4d18-b3f9-ac0109c002ee)
 
 
-
-
-Создать Deployment приложения, состоящего из двух контейнеров — nginx и multitool. Решить возникшую ошибку.
-После запуска увеличить количество реплик работающего приложения до 2.
-Продемонстрировать количество подов до и после масштабирования.
-Создать Service, который обеспечит доступ до реплик приложений из п.1.
-Создать отдельный Pod с приложением multitool и убедиться с помощью curl, что из пода есть доступ до приложений из п.1.
-
-
-
-
 ---- Задание 2 ----    
+
+Написал деплоймент с nginx и init контейнером который ожидает когда nslookup откликнется на имя сервиса   
+https://github.com/Heimdier/DEV/blob/main/Kube/1.3./deploy2.yml     
+
+запустил деплоймент - под не стартует, так как ждет инит контейнер, который ждет сервис     
+
+![image](https://github.com/user-attachments/assets/0d4ae38a-b653-4598-b35d-a74658099349) 
+
+написал и стартанул service2 https://github.com/Heimdier/DEV/blob/main/Kube/1.3./service2.yml      
+
+![image](https://github.com/user-attachments/assets/849ceeb3-4c60-4515-a9e3-6dacb30d22cd)   
+
+теперь инит контейнер увидел сервис и под запустился   
+
+![image](https://github.com/user-attachments/assets/790ca5e0-5735-4897-87e0-8f6866e3c9bd)
+
+
+
+
+
+
+
+
 
 
 
