@@ -39,6 +39,9 @@
 
 ![image](https://github.com/user-attachments/assets/561c03c2-2af9-45f2-8bee-7fe8ef9e657f)
 
+доступ через сервис    
+
+![image](https://github.com/user-attachments/assets/401e01c6-5be3-4d18-b3f9-ac0109c002ee)
 
 
 
@@ -52,7 +55,9 @@
 
 
 
----- Задание 2 ----
+---- Задание 2 ----    
+
+
 
 
 Создать Deployment приложения nginx и обеспечить старт контейнера только после того, как будет запущен сервис этого приложения.
