@@ -1,24 +1,28 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: 2x
+  name: 2a
   labels:
-    app: rep
+    app: repa
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
-      app: rep
+      app: repa
   template:
     metadata:
       labels:
-        app: rep
+        app: repa
     spec:
       containers:
       - name: multi
         image: wbitt/network-multitool
+        env:
+        - name: HTTP_PORT
+          value: "3333"
+        ports:
+        - containerPort: 3333
       - name: nginx
         image: nginx:1.14.2
         ports:
         - containerPort: 80
-        command: ["sleep", "infinity"]
