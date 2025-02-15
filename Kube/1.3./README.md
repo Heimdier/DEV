@@ -31,6 +31,14 @@
 
 ![image](https://github.com/user-attachments/assets/d1758b1a-2ae9-4028-ac7c-3c39d70f5647)
 
+зашел в контейнер пода с multitool   
+
+![image](https://github.com/user-attachments/assets/0cfa3900-5584-4e52-a13b-9d719e123cdb)
+
+с помощью curl проверил доступ до контейнеров под деплойментс   
+
+![image](https://github.com/user-attachments/assets/561c03c2-2af9-45f2-8bee-7fe8ef9e657f)
+
 
 
 
