@@ -4,7 +4,7 @@ metadata:
   name: netology-svc
 spec:
   selector:
-    app: rep
+    app: repa
   ports:
     - protocol: TCP
       port: 8088
