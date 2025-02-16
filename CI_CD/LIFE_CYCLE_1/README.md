@@ -3,11 +3,11 @@
 
 workflow для Bug    
 
-![image](https://github.com/user-attachments/assets/8b43fc52-ae4c-49dc-b717-be9a684cd965)
+![image](https://github.com/user-attachments/assets/c7e0836f-b1ae-421a-a38e-1c8f044d19ce)
 
 workflow для остальных задач    
 
-![image](https://github.com/user-attachments/assets/3880e68b-8947-4697-98fe-29da7fd25f94)
+![image](https://github.com/user-attachments/assets/e94148c2-9324-4539-a56b-67e38f5abc76)
 
 создал задачу Bug   
 
