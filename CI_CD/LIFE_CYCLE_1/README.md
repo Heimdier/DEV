@@ -9,6 +9,7 @@ workflow для остальных задач
 
 ![image](https://github.com/user-attachments/assets/e94148c2-9324-4539-a56b-67e38f5abc76)
 
-создал задачу Bug   
+создал задачу Bug и прогнал ее по workflow
 
-![image](https://github.com/user-attachments/assets/d0853779-1086-45b0-81a4-5d532f577089)
+![image](https://github.com/user-attachments/assets/5f565644-0d2c-4171-8006-d13c8e047892)
+
