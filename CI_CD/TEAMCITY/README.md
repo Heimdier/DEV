@@ -9,5 +9,14 @@
 сделал форк репозитария https://github.com/Heimdier/mnt-homeworks-ci-cd.git    
 подключил репозитарий    
 
-![image](https://github.com/user-attachments/assets/ceee91cf-d71a-464e-9efb-327183aebc5a)
+![image](https://github.com/user-attachments/assets/ceee91cf-d71a-464e-9efb-327183aebc5a)   
+
+установил nexus с помощью ansible    
+
+![image](https://github.com/user-attachments/assets/47f0c9d5-85a1-45f7-80b2-b78f7072adbf)
+
+
+
+
+
 
