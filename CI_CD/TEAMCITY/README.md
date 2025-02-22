@@ -17,11 +17,11 @@
 
 Создал проект в teamcity на основе fork и сделал autodetect конфигурации  
 
-![image](https://github.com/user-attachments/assets/5fa47cee-d1a7-4104-a873-a1d9f5a2ee20)
+![image](https://github.com/user-attachments/assets/d4591571-535e-44aa-927b-b6942f796de5)
 
-запустил первую сборку    
+запустил первую сборку по ветке main
 
-![image](https://github.com/user-attachments/assets/45ec0cc5-f1b8-4c64-897d-ac4fe150adf9)
+![image](https://github.com/user-attachments/assets/1b397afb-5831-4aac-aa86-7043700be288)
 
 Поменял условия сборки и добавил файл конфигураций settings.xml:    
 
