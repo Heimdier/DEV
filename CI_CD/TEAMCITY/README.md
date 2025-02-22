@@ -45,7 +45,7 @@
 
 добавил новый метод    
 
- ![image](https://github.com/user-attachments/assets/853b1772-d3a9-45a8-86cc-92621805c4bc)
+![image](https://github.com/user-attachments/assets/412aeb51-a819-4c3a-802f-f6d612bf0139)
 
 и тест    
 
