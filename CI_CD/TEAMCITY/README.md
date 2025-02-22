@@ -39,6 +39,20 @@
 
 ![image](https://github.com/user-attachments/assets/fcc35298-6caf-4345-8da6-a73d7cf30367)
 
+создал новую ветку в репозитарии   feature/add_reply
+
+![image](https://github.com/user-attachments/assets/a04dc4f0-dcf0-4df2-8ef9-ac8827d988ef)
+
+добавил новый метод    
+
+ ![image](https://github.com/user-attachments/assets/853b1772-d3a9-45a8-86cc-92621805c4bc)
+
+и тест    
+
+![image](https://github.com/user-attachments/assets/368e89f7-375f-4569-a306-bcf8c05ef66b)
+
+
+
 
 
 
