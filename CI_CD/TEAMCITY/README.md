@@ -31,6 +31,16 @@
 
 ![image](https://github.com/user-attachments/assets/434fb6da-fefc-4fee-a4a0-7e89b6d2ca1e)
 
+запустил билд - успешно    
+
+![image](https://github.com/user-attachments/assets/ad250cc7-07e0-470c-b496-a574f3f4fad3)
+
+в nexus релиз залился    
+
+![image](https://github.com/user-attachments/assets/fcc35298-6caf-4345-8da6-a73d7cf30367)
+
+
+
 
 
 
