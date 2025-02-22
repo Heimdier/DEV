@@ -51,6 +51,17 @@
 
 ![image](https://github.com/user-attachments/assets/368e89f7-375f-4569-a306-bcf8c05ef66b)
 
+сборка автоматически запустилась, тесты прошли успешно   
+
+![image](https://github.com/user-attachments/assets/9acdea19-ab3d-4b2b-bfa9-66e8c4b95cf3)
+
+слил ветку feature/add_reply с main - сборка запустилась тесты пройдены   
+
+![image](https://github.com/user-attachments/assets/4329e6d0-1025-4c51-8c0d-0a50c795b270)
+
+артефакт в nexus появился   
+
+![image](https://github.com/user-attachments/assets/76791bdc-9cf7-46d6-90db-81359c51c98c)
 
 
 
