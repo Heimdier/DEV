@@ -1,5 +1,16 @@
 #### 1. Создал Deployment из двух контейнеров (nginx и multitool) с количеством реплик 3 шт.
-[deploy.yml](https://github.com/Heimdier/DEV/blob/main/Kube/1.4./deploy.yml)
+[deploy.yml](https://github.com/Heimdier/DEV/blob/main/Kube/1.4./deploy.yml)    
+```shell
+maha@mahavm:~/kuber/1-4$ kubectl apply -f deploy.yml
+deployment.apps/2cc created
+
+maha@mahavm:~/kuber/1-4$ kubectl get pods
+NAME                  READY   STATUS              RESTARTS       AGE
+2cc-c498c4cf8-cqfnk   0/2     ContainerCreating   0              3s
+2cc-c498c4cf8-hr667   0/2     ContainerCreating   0              3s
+2cc-c498c4cf8-zstqn   0/2     ContainerCreating   0              3s
+
+```
 
 #### 2. Создать Service, который обеспечит доступ внутри кластера до контейнеров приложения из п.1 по порту 9001 — nginx 80, по 9002 — multitool 8080.
 #### 3. Создать отдельный Pod с приложением multitool и убедиться с помощью curl, что из пода есть доступ до приложения из п.1 по разным портам в разные контейнеры.
