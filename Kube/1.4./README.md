@@ -9,13 +9,16 @@ NAME                  READY   STATUS    RESTARTS       AGE
 2cc-c498c4cf8-cqfnk   2/2     Running   0              8s
 2cc-c498c4cf8-hr667   2/2     Running   0              8s
 2cc-c498c4cf8-zstqn   2/2     Running   0              8s
-
-
 ```
 
 #### 2. Создал Service для доступа до контейнеров по порту 9001 — nginx 80, по 9002 — multitool 8080   
-
-
+[service.yml](https://github.com/Heimdier/DEV/blob/main/Kube/1.4./service.yml)
+```shell
+maha@mahavm:~/kuber/1-4$ kubectl get service
+NAME         TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)             AGE
+kubernetes   ClusterIP   10.152.183.1     <none>        443/TCP             27d
+myserv       ClusterIP   10.152.183.122   <none>        9001/TCP,9002/TCP   3m36s
+```
 
 #### 3. Создать отдельный Pod с приложением multitool и убедиться с помощью curl, что из пода есть доступ до приложения из п.1 по разным портам в разные контейнеры.
 #### 4. Продемонстрировать доступ с помощью curl по доменному имени сервиса.
