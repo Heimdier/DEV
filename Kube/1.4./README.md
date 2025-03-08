@@ -32,11 +32,12 @@ myserv       ClusterIP   10.152.183.122   <none>        9001/TCP,9002/TCP   3m36
 ## Задание 2. Создать Service и обеспечить доступ к приложениям снаружи кластера
 
 #### 1. Создать отдельный Service приложения из Задания 1 с возможностью доступа снаружи кластера к nginx, используя тип NodePort.
-[service-ext.yml](https://github.com/Heimdier/DEV/blob/main/Kube/1.4./service-ext.yml)
+[service-ext.yml](https://github.com/Heimdier/DEV/blob/main/Kube/1.4./service-ext.yml)   
+![image](https://github.com/user-attachments/assets/46c96e47-4d37-4b32-867a-d6e798c5c431)
 
-#### 2. Продемонстрировать доступ с помощью браузера или curl с локального компьютера.
+#### 2. обратился к nginx через внешний порт сервиса 30001
+![image](https://github.com/user-attachments/assets/c253bc3c-d250-4480-8eb7-16b5628d2a26)
 
 
-#### 3. Предоставить манифест и Service в решении, а также скриншоты или вывод команды п.2.
 
 
