@@ -22,6 +22,8 @@ myserv       ClusterIP   10.152.183.122   <none>        9001/TCP,9002/TCP   3m36
 ```
 
 ####  Создал отдельный Pod с multitool и убедиться с помощью curl, что из пода есть доступ до приложения из п.1 по разным портам в разные контейнеры.
+[multi-pod.yml](https://github.com/Heimdier/DEV/blob/main/Kube/1.4./multi-pod.yml)
+
 
 ####  Проверил доступ из пода с multitool до приложений по разным портам
 
