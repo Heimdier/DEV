@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: serv-ext
+spec:
+  selector:
+    app: repa
+  type: NodePort
+  ports:
+  - name: ext-80
+    protocol: TCP
+    port: 9003
+    targetPort: 80
+    nodePort: 30001
