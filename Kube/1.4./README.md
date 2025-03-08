@@ -5,10 +5,11 @@ maha@mahavm:~/kuber/1-4$ kubectl apply -f deploy.yml
 deployment.apps/2cc created
 
 maha@mahavm:~/kuber/1-4$ kubectl get pods
-NAME                  READY   STATUS              RESTARTS       AGE
-2cc-c498c4cf8-cqfnk   0/2     ContainerCreating   0              3s
-2cc-c498c4cf8-hr667   0/2     ContainerCreating   0              3s
-2cc-c498c4cf8-zstqn   0/2     ContainerCreating   0              3s
+NAME                  READY   STATUS    RESTARTS       AGE
+2cc-c498c4cf8-cqfnk   2/2     Running   0              8s
+2cc-c498c4cf8-hr667   2/2     Running   0              8s
+2cc-c498c4cf8-zstqn   2/2     Running   0              8s
+
 
 ```
 
