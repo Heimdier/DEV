@@ -1,5 +1,4 @@
 ## Задание 1.
----
 #### Создал Deployment из двух контейнеров (nginx и multitool) с количеством реплик 3 шт.
 [deploy.yml](https://github.com/Heimdier/DEV/blob/main/Kube/1.4./deploy.yml)    
 ```shell
