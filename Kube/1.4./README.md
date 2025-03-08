@@ -32,7 +32,7 @@ myserv       ClusterIP   10.152.183.122   <none>        9001/TCP,9002/TCP   3m36
 ## Задание 2. Создать Service и обеспечить доступ к приложениям снаружи кластера
 
 #### 1. Создать отдельный Service приложения из Задания 1 с возможностью доступа снаружи кластера к nginx, используя тип NodePort.
-
+[service-ext.yml](https://github.com/Heimdier/DEV/blob/main/Kube/1.4./service-ext.yml)
 
 #### 2. Продемонстрировать доступ с помощью браузера или curl с локального компьютера.
 
@@ -40,29 +40,3 @@ myserv       ClusterIP   10.152.183.122   <none>        9001/TCP,9002/TCP   3m36
 #### 3. Предоставить манифест и Service в решении, а также скриншоты или вывод команды п.2.
 
 
-
-
-
-#### 4. Продемонстрировать доступ с помощью curl по доменному имени сервиса.
-#### 5. Предоставить манифесты Deployment и Service в решении, а также скриншоты или вывод команды п.4.
-
-#### 2. При помощи `ansible-galaxy` скачать себе эту роль.  
-
-```shell
- ansible-galaxy role install -p roles -r requirements.yml
-Starting galaxy role install process
-- extracting clickhouse to /ansible/08-ansible-04-role/playbook/roles/clickhouse
-- clickhouse (1.11.0) was installed successfully
-
-```
-
-
-
-#### 3. Создать новый каталог с ролью при помощи:   
-`ansible-galaxy role init vector-role`  
-`ansible-galaxy role init lighthouse-role`  
-
-```shell
-
-- Role lighthouse-role was created successfully
-```
