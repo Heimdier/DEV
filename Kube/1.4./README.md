@@ -21,11 +21,19 @@ kubernetes   ClusterIP   10.152.183.1     <none>        443/TCP             27d
 myserv       ClusterIP   10.152.183.122   <none>        9001/TCP,9002/TCP   3m36s
 ```
 
-####  Создал отдельный Pod с multitool и убедиться с помощью curl, что из пода есть доступ до приложения из п.1 по разным портам в разные контейнеры.
+####  Создал отдельный Pod с multitool
 [multi-pod.yml](https://github.com/Heimdier/DEV/blob/main/Kube/1.4./multi-pod.yml)
 
-
 ####  Проверил доступ из пода с multitool до приложений по разным портам
+![image](https://github.com/user-attachments/assets/330caaf4-3ad8-4da9-be4c-ee8c01790870)
+
+![image](https://github.com/user-attachments/assets/c6d5318d-3d05-4b1b-900a-9dada5fcd166)
+
+## Задание 2.
+
+
+
+
 
 #### 4. Продемонстрировать доступ с помощью curl по доменному имени сервиса.
 #### 5. Предоставить манифесты Deployment и Service в решении, а также скриншоты или вывод команды п.4.
