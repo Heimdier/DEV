@@ -1,5 +1,5 @@
 #### 1. Создал Deployment из двух контейнеров (nginx и multitool) с количеством реплик 3 шт.
-[playbook/requirements.yml](playbook/requirements.yml)
+[deploy.yml](https://github.com/Heimdier/DEV/blob/main/Kube/1.4./deploy.yml)
 
 #### 2. Создать Service, который обеспечит доступ внутри кластера до контейнеров приложения из п.1 по порту 9001 — nginx 80, по 9002 — multitool 8080.
 #### 3. Создать отдельный Pod с приложением multitool и убедиться с помощью curl, что из пода есть доступ до приложения из п.1 по разным портам в разные контейнеры.
