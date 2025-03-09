@@ -18,7 +18,9 @@
 
 
 ## Задание 2. Создать Ingress и обеспечить доступ к приложениям снаружи кластера
-#### Включил Ingress-controller в MicroK8S.   
+#### Включил Ingress-controller в MicroK8S.  
+`microk8s enable ingress`
+![image](https://github.com/user-attachments/assets/86037b7d-e73f-41d2-b37f-4f903bc60d4b)
 
 #### Создал Ingress, обеспечивающий доступ снаружи по IP-адресу кластера MicroK8S так, чтобы при запросе только по адресу открывался frontend а при добавлении /api - backend.   
 
