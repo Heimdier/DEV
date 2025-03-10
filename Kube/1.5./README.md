@@ -1,15 +1,15 @@
 ## Задание 1. Создать Deployment приложений backend и frontend
-#### Создал Deployment приложения frontend из образа nginx с количеством реплик 3 шт.
+#### Создал Deployment приложения frontend из образа nginx с количеством реплик 3 шт
 [deploy.yml](https://github.com/Heimdier/DEV/blob/main/Kube/1.4./deploy.yml)    
 
-#### Создал Deployment приложения backend из образа multitool.
+#### Создал Deployment приложения backend из образа multitool
 [deploy-multitool](https://github.com/Heimdier/DEV/blob/main/Kube/1.5./deploy-multitool.yml)
 
-#### Создал Deployment приложения frontend из образа nginx с количеством реплик 3 шт.  
+#### Создал Deployment приложения frontend из образа nginx с количеством реплик 3 шт  
 [deploy-nginx](https://github.com/Heimdier/DEV/blob/main/Kube/1.5./deploy-nginx.yml)
 
 #### Создал сервисы, которые обеспечат доступ к обоим приложениям внутри кластера.   
-[service-backend](https://github.com/Heimdier/DEV/blob/main/Kube/1.5./service-backend.yml)
+[service-backend](https://github.com/Heimdier/DEV/blob/main/Kube/1.5./service-backend.yml)   
 [service-frontend](https://github.com/Heimdier/DEV/blob/main/Kube/1.5./service-frontend.yml)
 
 #### проверил, что приложения видят друг друга с помощью Service.   
