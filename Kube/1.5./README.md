@@ -13,8 +13,40 @@
 [service-frontend](https://github.com/Heimdier/DEV/blob/main/Kube/1.5./service-frontend.yml)
 
 #### проверил, что приложения видят друг друга с помощью Service.   
+![image](https://github.com/user-attachments/assets/790f442d-a4a6-47fc-a840-7694b6c1cfd8)
+
+```shell
+maha@mahavm:~/kuber/1-5$ kubectl exec -it dm-cbd484948-89xwd -- /bin/bash
+dm-cbd484948-89xwd:/# curl http://svc-n
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+<p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.</p>
+
+<p>For online documentation and support please refer to
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+Commercial support is available at
+<a href="http://nginx.com/">nginx.com</a>.</p>
+
+<p><em>Thank you for using nginx.</em></p>
+</body>
+</html>
+dm-cbd484948-89xwd:/# 
 
 
+```
 
 ## Задание 2. Создать Ingress и обеспечить доступ к приложениям снаружи кластера
 #### Включил Ingress-controller в MicroK8S:  `microk8s enable ingress`
