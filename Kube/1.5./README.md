@@ -2,19 +2,18 @@
 #### Создал Deployment приложения frontend из образа nginx с количеством реплик 3 шт.
 [deploy.yml](https://github.com/Heimdier/DEV/blob/main/Kube/1.4./deploy.yml)    
 
-
 #### Создал Deployment приложения backend из образа multitool.
-
+[deploy-multitool](https://github.com/Heimdier/DEV/blob/main/Kube/1.5./deploy-multitool.yml)
 
 #### Создал Deployment приложения frontend из образа nginx с количеством реплик 3 шт.  
+[deploy-nginx](https://github.com/Heimdier/DEV/blob/main/Kube/1.5./deploy-nginx.yml)
 
-#### Создал Deployment приложения backend из образа multitool.  
+#### Создал сервисы, которые обеспечат доступ к обоим приложениям внутри кластера.   
+[service-backend](https://github.com/Heimdier/DEV/blob/main/Kube/1.5./service-backend.yml)
+[service-frontend](https://github.com/Heimdier/DEV/blob/main/Kube/1.5./service-frontend.yml)
 
-#### Добавил Service, которые обеспечат доступ к обоим приложениям внутри кластера.   
+#### проверил, что приложения видят друг друга с помощью Service.   
 
-#### демонстрация, что приложения видят друг друга с помощью Service.   
-
-#### манифесты Deployment и Service:   
 
 
 ## Задание 2. Создать Ingress и обеспечить доступ к приложениям снаружи кластера
