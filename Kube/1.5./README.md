@@ -56,53 +56,12 @@ dm-cbd484948-89xwd:/#
 #### Создал Ingress, обеспечивающий доступ так, чтобы при запросе только по адресу открывался frontend а при добавлении /api - backend.   
 [ingress](https://github.com/Heimdier/DEV/blob/main/Kube/1.5./ingress.yml)
 
-#### проверил доступ с локального компьютера.   
+#### проверил доступ с локального компьютера - при обращении к просто адресу и адресу с /api запрос направляется на разные сервисы и соответственно поды   
 
 ![image](https://github.com/user-attachments/assets/25856c6c-2128-4218-9f20-48aea328292e)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-```shell
-maha@mahavm:~/kuber/1-4$ kubectl apply -f deploy.yml
-deployment.apps/2cc created
-
-```
-
-#### Создал Service для доступа до контейнеров по порту 9001 — nginx 80, по 9002 — multitool 8080   
-[service.yml](https://github.com/Heimdier/DEV/blob/main/Kube/1.4./service.yml)
-```shell
-maha@mahavm:~/kuber/1-4$ kubectl get service
-
-```
-
-####  Создал отдельный Pod с multitool
-[multi-pod.yml](https://github.com/Heimdier/DEV/blob/main/Kube/1.4./multi-pod.yml)
-
-####  Проверил доступ из пода с multitool до приложений по разным портам
-![image](https://github.com/user-attachments/assets/330caaf4-3ad8-4da9-be4c-ee8c01790870)
-
-![image](https://github.com/user-attachments/assets/c6d5318d-3d05-4b1b-900a-9dada5fcd166)
-
-## Задание 2. Создать Service и обеспечить доступ к приложению снаружи кластера
-
-#### 1. Создать отдельный Service приложения из Задания 1 с возможностью доступа снаружи кластера к nginx, используя тип NodePort.
-[service-ext.yml](https://github.com/Heimdier/DEV/blob/main/Kube/1.4./service-ext.yml)  
-
-![image](https://github.com/user-attachments/assets/46c96e47-4d37-4b32-867a-d6e798c5c431)
-
-#### 2. обратился к nginx через внешний порт сервиса 30001
-![image](https://github.com/user-attachments/assets/c253bc3c-d250-4480-8eb7-16b5628d2a26)
 
 
 
