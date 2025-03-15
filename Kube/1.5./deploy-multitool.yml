@@ -1,1 +1,21 @@
-
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dm
+  labels:
+    app: mu
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: mu
+  template:
+    metadata:
+      labels:
+        app: mu
+    spec:
+      containers:
+      - name: multi
+        image: wbitt/network-multitool
+        ports:
+        - containerPort: 80
