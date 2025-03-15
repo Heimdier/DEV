@@ -53,12 +53,13 @@ dm-cbd484948-89xwd:/#
 
 ![image](https://github.com/user-attachments/assets/86037b7d-e73f-41d2-b37f-4f903bc60d4b)
 
-#### Создал Ingress, обеспечивающий доступ снаружи по IP-адресу кластера MicroK8S так, чтобы при запросе только по адресу открывался frontend а при добавлении /api - backend.   
-
+#### Создал Ingress, обеспечивающий доступ так, чтобы при запросе только по адресу открывался frontend а при добавлении /api - backend.   
+[ingress](https://github.com/Heimdier/DEV/blob/main/Kube/1.5./ingress.yml)
 
 #### проверил доступ с локального компьютера.   
 
-#### Манифесты и скриншоты или вывод команды п.2.   
+![image](https://github.com/user-attachments/assets/25856c6c-2128-4218-9f20-48aea328292e)
+
 
 
 
