@@ -12,7 +12,7 @@ default       2app-855d7585cd-7s6km                          2/2     Running   0
 
 2. Сделать так, чтобы busybox писал каждые пять секунд в некий файл в общей директории.
 ```shell
-- name: busyb
+      - name: busyb
         image: busybox
         command: ["/bin/sh", "-c", "while true; do echo $(date)_Success!  >> /2/tulsi.txt; sleep 5; done"]
         volumeMounts:
