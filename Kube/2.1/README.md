@@ -1,4 +1,4 @@
-### Задание 1 Создать Deployment приложения, состоящего из двух контейнеров и обменивающихся данными.
+### Задание 1. Создать Deployment приложения, состоящего из двух контейнеров и обменивающихся данными.
 
 1. Создать Deployment приложения, состоящего из контейнеров busybox и multitool.   
 [deploy](https://github.com/Heimdier/DEV/blob/main/Kube/2.1/deploy.yml)
@@ -61,7 +61,7 @@ maha@mahavm:~/kuber/2-1$ ^C
 
 ------
 
-### Задание 2 Создать DaemonSet приложения, которое может прочитать логи ноды.
+### Задание 2. Создать DaemonSet приложения, которое может прочитать логи ноды.
 
 1. Создал DaemonSet приложения, состоящего из multitool.   
 [daemon](https://github.com/Heimdier/DEV/blob/main/Kube/2.1/daemon.yml)
