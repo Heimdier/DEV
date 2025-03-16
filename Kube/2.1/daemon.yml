@@ -1,32 +1,27 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: DaemonSet
 metadata:
-  name: 2app
+  name: log-daemon
   labels:
-    app: mu
+    app: moon
 spec:
-  replicas: 1
   selector:
     matchLabels:
-      app: mu
+      app: moon
   template:
     metadata:
       labels:
-        app: mu
+        app: moon
     spec:
       containers:
       - name: multi
         image: wbitt/network-multitool
-        command: ["/bin/sh", "-c", "while true; do cat /1/tulsi.txt; sleep 5; done"]
         volumeMounts:
-        - name: island
-          mountPath: /1
-      - name: busyb
-        image: busybox
-        command: ["/bin/sh", "-c", "while true; do echo $(date)_Success!  >> /2/tulsi.txt; sleep 5; done"]
-        volumeMounts:
-        - name: island
-          mountPath: /2
+        - name: syslog
+          mountPath: /cluster-log
+          subPath: syslog
+          readOnly: true
       volumes:
-      - name: island
-        emptyDir: {}
+      - name: syslog
+        hostPath:
+          path: /var/log
