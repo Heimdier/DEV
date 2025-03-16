@@ -10,10 +10,28 @@ NAMESPACE     NAME                                         READY   STATUS    RES
 default       2app-855d7585cd-7s6km                          2/2     Running   0              17s
 ```
 
-3. Сделать так, чтобы busybox писал каждые пять секунд в некий файл в общей директории.
-4. Обеспечить возможность чтения файла контейнером multitool.
-5. Продемонстрировать, что multitool может читать файл, который периодоически обновляется.
-6. 
+2. Сделать так, чтобы busybox писал каждые пять секунд в некий файл в общей директории.
+```shell
+- name: busyb
+        image: busybox
+        command: ["/bin/sh", "-c", "while true; do echo $(date)_Success!  >> /2/tulsi.txt; sleep 5; done"]
+        volumeMounts:
+        - name: island
+          mountPath: /2
+```
+   
+3. Обеспечить возможность чтения файла контейнером multitool.
+```shell
+      - name: multi
+        image: wbitt/network-multitool
+        command: ["/bin/sh", "-c", "while true; do cat /1/tulsi.txt; sleep 5; done"]
+        volumeMounts:
+        - name: island
+          mountPath: /1
+```
+
+4. Проверил, что multitool читает обновляемый файл tulsi.txt
+
 ```shell
 maha@mahavm:~/kuber/2-1$ kubectl logs 2app-855d7585cd-7s6km -c multi
 Sun Mar 16 08:21:00 UTC 2025_Success!
@@ -39,7 +57,7 @@ Sun Mar 16 08:22:35 UTC 2025_Success!
 maha@mahavm:~/kuber/2-1$ ^C
 
 ```
-6. Предоставить манифесты Deployment в решении, а также скриншоты или вывод команды из п. 4.
+
 
 ------
 
