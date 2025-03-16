@@ -1,1 +1,32 @@
-
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: 2app
+  labels:
+    app: mu
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mu
+  template:
+    metadata:
+      labels:
+        app: mu
+    spec:
+      containers:
+      - name: multi
+        image: wbitt/network-multitool
+        command: ["/bin/sh", "-c", "while true; do cat /1/tulsi.txt; sleep 5; done"]
+        volumeMounts:
+        - name: island
+          mountPath: /1
+      - name: busyb
+        image: busybox
+        command: ["/bin/sh", "-c", "while true; do echo $(date)_Success!  >> /2/tulsi.txt; sleep 5; done"]
+        volumeMounts:
+        - name: island
+          mountPath: /2
+      volumes:
+      - name: island
+        emptyDir: {}
