@@ -28,17 +28,22 @@ NAME                    READY   STATUS    RESTARTS        AGE
 ```
 
 3. Зашел в контейнер multitool проверить пишет ли busybox в общую директорию
-4. 
+
 ![image](https://github.com/user-attachments/assets/a720968b-c860-4536-82aa-833f166d3677)
 
 
-5. Удалить Deployment и PVC. Продемонстрировать, что после этого произошло с PV. Пояснить, почему.   
+4. Удалить Deployment и PVC. Продемонстрировать, что после этого произошло с PV     
+![image](https://github.com/user-attachments/assets/54e39285-cc6b-49cf-b48b-9e816b7f5e15)
+
+Cтатус pv сменился с bound на released, т.е. с хранилищем не связан claim, но данные на ноде должны сохраниться
+
+5. Проверяю, что данные сохранились на локальном диске ноды     
+![image](https://github.com/user-attachments/assets/b2cc2586-528d-4ffc-9cdf-c105906cd123)
 
 
-6. Продемонстрировать, что файл сохранился на локальном диске ноды. Удалить PV.  Продемонстрировать что произошло с файлом после удаления PV. Пояснить, почему.   
+6. Удалил PV.  данные все также на месте.    
+![image](https://github.com/user-attachments/assets/286066da-8a85-4ddd-a3e7-efa9c5ef55dd)
 
-
-5. Предоставить манифесты, а также скриншоты или вывод необходимых команд.   
 
 ------
 
