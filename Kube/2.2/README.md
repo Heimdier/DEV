@@ -43,7 +43,7 @@ Cтатус pv сменился с bound на released, т.е. с хранили
 ![image](https://github.com/user-attachments/assets/b2cc2586-528d-4ffc-9cdf-c105906cd123)
 
 
-6. Удалил PV.  данные все также на месте.
+6. Удалил PV.  данные все также на месте, так как PV выступает лишь как интерфейс для доступа к хранилищу
    
 ![image](https://github.com/user-attachments/assets/286066da-8a85-4ddd-a3e7-efa9c5ef55dd)
 
