@@ -111,10 +111,15 @@ my-pvc   Bound    pvc-50ba2a3f-2f6e-4902-86f3-8ee4586874c5   5Gi        RWO     
 
 [dep-mult](https://github.com/Heimdier/DEV/blob/main/Kube/2.2/dep-mult.yml) 
 
-![image](https://github.com/user-attachments/assets/00aca171-9fec-4d30-b288-a14fab4b952d)
+![image](https://github.com/user-attachments/assets/1ee807b7-6df5-48a9-96f9-0a964b0926c9)
 
+5. Проверил что multitool пишет в nfs    
 
-5. Продемонстрировать возможность чтения и записи файла изнутри пода.   
+![image](https://github.com/user-attachments/assets/dd907c85-1218-42b7-ba20-dd3bfa642b0a)
+
+6. Зашел в под multitool, проверил что пишется в примонтированный nfs   
+
+![image](https://github.com/user-attachments/assets/9eaf0427-bc00-4e11-9c0a-b087a77bcb4a)
 
 
  
