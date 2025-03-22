@@ -122,15 +122,4 @@ my-pvc   Bound    pvc-50ba2a3f-2f6e-4902-86f3-8ee4586874c5   5Gi        RWO     
 ![image](https://github.com/user-attachments/assets/9eaf0427-bc00-4e11-9c0a-b087a77bcb4a)
 
 
- 
 
-
-
-
-[deploy-nginx](https://github.com/Heimdier/DEV/blob/main/Kube/1.5./deploy-nginx.yml)
-
-#### Создал Deployment приложения backend из образа multitool
-
-```shell
-
-```
