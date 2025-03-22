@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dep-mult
+  labels:
+    app: mult-nfs
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mult-nfs
+  template:
+    metadata:
+      labels:
+        app: mult-nfs
+    spec:
+      containers:
+      - name: multi
+        image: wbitt/network-multitool
+        command: ["/bin/sh", "-c", "while true; do echo $(date)_Success!  >> /nfs/tulsi.txt; sleep 5; done"]
+        volumeMounts:
+        - name: island
+          mountPath: /nfs
+      volumes:
+      - name: island
+        persistentVolumeClaim:
+          claimName: my-pvc
