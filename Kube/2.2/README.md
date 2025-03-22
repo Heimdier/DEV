@@ -53,7 +53,50 @@ Cтатус pv сменился с bound на released, т.е. с хранили
 ### Задание 2. Создать Deployment приложения, которое может хранить файлы на NFS с динамическим созданием PV.   
 
 1. Включить и настроить NFS-сервер на MicroK8S.   
+```shell
+sudo apt-get install nfs-kernel-server
+sudo mkdir -p /srv/nfs
+sudo chown nobody:nogroup /srv/nfs
+sudo chmod 0777 /srv/nfs
 
+nano /etc/exports
+/srv/nfs 10.0.0.0/24(rw,sync,no_subtree_check)
+
+sudo systemctl restart nfs-kernel-server
+```
+2. Установил CSI driver for NFS.   
+
+```shell
+microk8s enable helm3
+microk8s helm3 repo add csi-driver-nfs https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/charts
+microk8s helm3 repo update
+
+microk8s helm3 install csi-driver-nfs csi-driver-nfs/csi-driver-nfs \
+    --namespace kube-system \
+    --set kubeletDir="/var/snap/microk8s/common/var/lib/kubelet"
+
+maha@mahavm:~/kuber/2-2$ kubectl --namespace=kube-system get pods --selector="app.kubernetes.io/instance=csi-driver-nfs" --watch
+NAME                                  READY   STATUS              RESTARTS   AGE
+csi-nfs-node-bvppn                    3/3     Running             0          38s
+csi-nfs-controller-8458d4f67d-8ztbf   5/5     Running             0          45s
+
+maha@mahavm:~/kuber/2-2$ microk8s kubectl get csidrivers
+NAME             ATTACHREQUIRED   PODINFOONMOUNT   STORAGECAPACITY   TOKENREQUESTS   REQUIRESREPUBLISH   MODES        AGE
+nfs.csi.k8s.io   false            false            false             <unset>         false               Persistent   13m
+
+```
+
+2. Создал storage class и pvc
+
+[sc-nfs](https://github.com/Heimdier/DEV/blob/main/Kube/2.2/sc-nfs.yml)   
+[pvc-nfs](https://github.com/Heimdier/DEV/blob/main/Kube/2.2/pvc-nfs.yml)
+   
+```shell
+maha@mahavm:~/kuber/2-2$ microk8s kubectl apply -f sc-nfs.yaml
+storageclass.storage.k8s.io/nfs-csi created
+maha@mahavm:~/kuber/2-2$ microk8s kubectl apply -f pvc-nfs.yml
+persistentvolumeclaim/my-pvc created
+```
 
 2. Создать Deployment приложения состоящего из multitool, и подключить к нему PV, созданный автоматически на сервере NFS.   
 
