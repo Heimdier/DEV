@@ -60,7 +60,7 @@ sudo chown nobody:nogroup /srv/nfs
 sudo chmod 0777 /srv/nfs
 
 nano /etc/exports
-/srv/nfs 10.0.0.0/24(rw,sync,no_subtree_check)
+/srv/nfs 192.168.190.0/24(rw,sync,no_subtree_check)
 
 sudo systemctl restart nfs-kernel-server
 ```
@@ -86,7 +86,7 @@ nfs.csi.k8s.io   false            false            false             <unset>    
 
 ```
 
-2. Создал storage class и pvc
+3. Создал storage class и pvc, pv создался автоматически
 
 [sc-nfs](https://github.com/Heimdier/DEV/blob/main/Kube/2.2/sc-nfs.yml)   
 [pvc-nfs](https://github.com/Heimdier/DEV/blob/main/Kube/2.2/pvc-nfs.yml)
@@ -96,15 +96,28 @@ maha@mahavm:~/kuber/2-2$ microk8s kubectl apply -f sc-nfs.yaml
 storageclass.storage.k8s.io/nfs-csi created
 maha@mahavm:~/kuber/2-2$ microk8s kubectl apply -f pvc-nfs.yml
 persistentvolumeclaim/my-pvc created
+
+maha@mahavm:~/kuber/2-2$  kubectl get pv
+NAME                                       CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM            STORAGECLASS   VOLUMEATTRIBUTESCLASS   REASON   AGE
+pvc-50ba2a3f-2f6e-4902-86f3-8ee4586874c5   5Gi        RWO            Delete           Bound    default/my-pvc   nfs-csi        <unset>                          7m26s
+
+maha@mahavm:~/kuber/2-2$ kubectl get pvc
+NAME     STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   VOLUMEATTRIBUTESCLASS   AGE
+my-pvc   Bound    pvc-50ba2a3f-2f6e-4902-86f3-8ee4586874c5   5Gi        RWO            nfs-csi        <unset>                 8m17s
+
 ```
 
-2. Создать Deployment приложения состоящего из multitool, и подключить к нему PV, созданный автоматически на сервере NFS.   
+4. Создать Deployment приложения состоящего из multitool, и подключить к нему PV, созданный автоматически на сервере NFS       
+
+[dep-mult](https://github.com/Heimdier/DEV/blob/main/Kube/2.2/dep-mult.yml) 
+
+![image](https://github.com/user-attachments/assets/00aca171-9fec-4d30-b288-a14fab4b952d)
 
 
-3. Продемонстрировать возможность чтения и записи файла изнутри пода.   
+5. Продемонстрировать возможность чтения и записи файла изнутри пода.   
 
 
-4. Предоставить манифесты, а также скриншоты или вывод необходимых команд.   
+ 
 
 
 
