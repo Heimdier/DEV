@@ -48,17 +48,9 @@ service/service-nx created
 ```
 ![image](https://github.com/user-attachments/assets/fed05a12-40d8-4be9-8f4f-e58f40e3dbcf)
 
+6. Зашел в отдельный под и постучался curl на сервис
 
-
-3. Продемонстрировать, что pod стартовал и оба конейнера работают.
-
-
-4. Сделать простую веб-страницу и подключить её к Nginx с помощью ConfigMap. Подключить Service и показать вывод curl или в браузере.
-
-
-5. Предоставить манифесты, а также скриншоты или вывод необходимых команд.
-
-
+![image](https://github.com/user-attachments/assets/77e5612a-2131-413d-861e-528e98b788bf)
 
 ------
 
