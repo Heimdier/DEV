@@ -33,7 +33,9 @@ data:
     </html>
 ```
 
-3. Решить возникшую проблему с помощью ConfigMap.
+4. Подготовил сервис для подключения к nginx [service-nx](https://github.com/Heimdier/DEV/blob/main/Kube/2.3/service-nx.yml)
+
+5. Стартовал манифесты
 ```shell
 maha@mahavm:~/kuber/2-3$ kubectl apply -f config-map-mu.yml
 configmap/mu-port created
@@ -41,6 +43,8 @@ maha@mahavm:~/kuber/2-3$ kubectl apply -f config-map-nx.yml
 configmap/nginx-index created
 maha@mahavm:~/kuber/2-3$ kubectl apply -f dep-ng-mu.yml
 deployment.apps/2app created
+maha@mahavm:~/kuber/2-3$ kubectl apply -f service-nx.yml
+service/service-nx created
 ```
 ![image](https://github.com/user-attachments/assets/fed05a12-40d8-4be9-8f4f-e58f40e3dbcf)
 
