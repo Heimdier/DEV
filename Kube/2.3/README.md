@@ -89,7 +89,7 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout tls.key -out tls.crt
 ![image](https://github.com/user-attachments/assets/61346d19-5533-4300-ac72-f444f7108322)
 
 
-4. Создать Ingress и необходимый Service, подключить к нему SSL в вид. Продемонстировать доступ к приложению по HTTPS.
+4. Создать Ingress и необходимый Service, подключить к нему SSL в вид. 
 
 [ingress](https://github.com/Heimdier/DEV/blob/main/Kube/2.3/ingress.yml)    
 [svc-nx](https://github.com/Heimdier/DEV/blob/main/Kube/2.3/svc-nx.yml)    
@@ -101,20 +101,12 @@ spec:
     secretName: nx-tls
 ```
 
-5. Предоставить манифесты, а также скриншоты или вывод необходимых команд.
+5. Продемонстировать доступ к приложению по HTTPS    
 
 ![image](https://github.com/user-attachments/assets/daf4ecce-f9af-4083-839e-963888eb43fa)
 
+![image](https://github.com/user-attachments/assets/1aa25634-15c5-4c65-91d8-696a5c33fd14)
 
 
-   [deploy-nginx](https://github.com/Heimdier/DEV/blob/main/Kube/1.5./deploy-nginx.yml)
-
-#### Создал Deployment приложения backend из образа multitool
-
-```shell
-  encode base 64:
-  echo `dsfa;lksjals` | base64 --decode
-
-```
 
 
