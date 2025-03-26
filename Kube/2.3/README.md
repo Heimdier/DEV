@@ -54,15 +54,38 @@ service/service-nx created
 
 ------
 
-### Задание 2. Создать приложение с вашей веб-страницей, доступной по HTTPS    
+### Задание 2. Создать приложение с вашей веб-страницей, доступной по HTTPS     
 
-1. Создать Deployment приложения, состоящего из Nginx.
+1. Создать Deployment приложения, состоящего из Nginx.     
+ [dep-ng](https://github.com/Heimdier/DEV/blob/main/Kube/2.3/dep-ng.yml)
 
+2. Создать собственную веб-страницу и подключить её как ConfigMap к приложению.     
+[config-map-nx2](https://github.com/Heimdier/DEV/blob/main/Kube/2.3/config-map-nx2.yml)
+```shell
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-index2
+data:
+  index.html: |
+    <html>
+    <head>
+    <title>Welcome!</title>
+    </head>
+    <body>
+    <H1>Antananarivu</H1>
+    <P> zanzibar </P>
+    <P> TANZANIA</P>
+    </body>
+    </html>
+```
 
-2. Создать собственную веб-страницу и подключить её как ConfigMap к приложению.
+3. Выпустить самоподписной сертификат SSL. Создать Secret для использования сертификата.    
+```shell
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout tls.key -out tls.crt -subj "/CN=tuktuk.com"
+```
+![image](https://github.com/user-attachments/assets/61346d19-5533-4300-ac72-f444f7108322)
 
-
-3. Выпустить самоподписной сертификат SSL. Создать Secret для использования сертификата.
 
 
 4. Создать Ingress и необходимый Service, подключить к нему SSL в вид. Продемонстировать доступ к приложению по HTTPS.
