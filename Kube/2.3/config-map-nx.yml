@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-index
+data:
+  index.html: |
+    <html>
+    <head>
+    <title>Welcome!</title>
+    </head>
+    <body>
+    <H1>Douzoyoroshiku</H1>
+    <P> Watashi wa Viktor </P>
+    <P> Hoteru wa doko desu ka?</P>
+    </body>
+    </html>
