@@ -80,6 +80,8 @@ data:
     </html>
 ```
 
+![image](https://github.com/user-attachments/assets/1a08e540-8ba0-459c-91f1-e0167c1f00d3)
+
 3. Выпустить самоподписной сертификат SSL. Создать Secret для использования сертификата.    
 ```shell
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout tls.key -out tls.crt -subj "/CN=tuktuk.com"
@@ -87,9 +89,10 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout tls.key -out tls.crt
 ![image](https://github.com/user-attachments/assets/61346d19-5533-4300-ac72-f444f7108322)
 
 
-
 4. Создать Ingress и необходимый Service, подключить к нему SSL в вид. Продемонстировать доступ к приложению по HTTPS.
 
+[ingress](https://github.com/Heimdier/DEV/blob/main/Kube/2.3/ingress.yml)
+[svc-nx](https://github.com/Heimdier/DEV/blob/main/Kube/2.3/svc-nx.yml)
 
 5. Предоставить манифесты, а также скриншоты или вывод необходимых команд.
 
