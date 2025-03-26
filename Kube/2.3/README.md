@@ -91,7 +91,7 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout tls.key -out tls.crt
 
 4. Создать Ingress и необходимый Service, подключить к нему SSL в вид. Продемонстировать доступ к приложению по HTTPS.
 
-[ingress](https://github.com/Heimdier/DEV/blob/main/Kube/2.3/ingress.yml)
+[ingress](https://github.com/Heimdier/DEV/blob/main/Kube/2.3/ingress.yml)    
 [svc-nx](https://github.com/Heimdier/DEV/blob/main/Kube/2.3/svc-nx.yml)
 
 5. Предоставить манифесты, а также скриншоты или вывод необходимых команд.
