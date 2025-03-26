@@ -100,10 +100,9 @@ spec:
     - tuktuk.com
     secretName: nx-tls
 ```
+![image](https://github.com/user-attachments/assets/daf4ecce-f9af-4083-839e-963888eb43fa)
 
 5. Продемонстировать доступ к приложению по HTTPS    
-
-![image](https://github.com/user-attachments/assets/daf4ecce-f9af-4083-839e-963888eb43fa)
 
 ![image](https://github.com/user-attachments/assets/1aa25634-15c5-4c65-91d8-696a5c33fd14)
 
