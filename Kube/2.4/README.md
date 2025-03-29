@@ -21,10 +21,12 @@
 
 ![image](https://github.com/user-attachments/assets/6e311382-16dd-40dd-a2ef-457716ec4c6a)
 
-5. подключаем RBAC   
-`microk8s enable rbac`    
+5. подключаем RBAC и создаем роль с биндинг   
+`microk8s enable rbac`
+[role-bind](https://github.com/Heimdier/DEV/blob/main/Kube/2.4/role-bind.yml)     
+[role-pods](https://github.com/Heimdier/DEV/blob/main/Kube/2.4/role-pods.yml)     
 
-6. создаем пользователя kent в кубере с указанием сертификата и ключа:   
+7. создаем пользователя kent в кубере с указанием сертификата и ключа:   
 ```shell
 kubectl config set-credentials kent \
 --client-certificate=kent.crt \
@@ -50,7 +52,8 @@ kubectl config set-credentials kent \
 
 
 
-[deploy-nginx](https://github.com/Heimdier/DEV/blob/main/Kube/1.5./deploy-nginx.yml)
+[role-bind](https://github.com/Heimdier/DEV/blob/main/Kube/2.4/role-bind.yml)
+[role-pods](https://github.com/Heimdier/DEV/blob/main/Kube/2.4/role-pods.yml)
 
 #### Создал Deployment приложения backend из образа multitool
 
