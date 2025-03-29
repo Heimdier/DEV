@@ -21,29 +21,28 @@
 
 ![image](https://github.com/user-attachments/assets/6e311382-16dd-40dd-a2ef-457716ec4c6a)
 
-5. подключаем RBAC и создаем роль с биндинг   
-`microk8s enable rbac`
-[role-bind](https://github.com/Heimdier/DEV/blob/main/Kube/2.4/role-bind.yml)     
-[role-pods](https://github.com/Heimdier/DEV/blob/main/Kube/2.4/role-pods.yml)     
-
-7. создаем пользователя kent в кубере с указанием сертификата и ключа:   
+5. создаем пользователя kent в кубере с указанием сертификата и ключа:   
 ```shell
 kubectl config set-credentials kent \
 --client-certificate=kent.crt \
 --client-key=kent.key
 ```
 
-7. Задаем контекст для пользователя   
+6. Задаем контекст для пользователя   
 `kubectl config set-context kent-context --cluster=microk8s-cluster --user=kent`   
 
 ![image](https://github.com/user-attachments/assets/d2b7b278-7292-498c-828e-3b78c72b4955)
 
-8. проверяем что в .kube/config появился новый юзер kent и контекст
+7. проверяем что в .kube/config появился новый юзер kent и контекст
 
 ![image](https://github.com/user-attachments/assets/26f4c353-89b3-432c-b3e2-3080fab2240c)
 
+8. подключаем RBAC и создаем роль с биндинг   
+`microk8s enable rbac`    
+[role-bind](https://github.com/Heimdier/DEV/blob/main/Kube/2.4/role-bind.yml)     
+[role-pods](https://github.com/Heimdier/DEV/blob/main/Kube/2.4/role-pods.yml)   
 
-
+![image](https://github.com/user-attachments/assets/791fdd8b-407b-4ae4-a092-d62e2ec8a1de)
 
    
 
