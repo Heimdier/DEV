@@ -44,10 +44,11 @@ kubectl config set-credentials kent \
 
 ![image](https://github.com/user-attachments/assets/791fdd8b-407b-4ae4-a092-d62e2ec8a1de)
 
-   
+9. переключаюсь на созданный контекст и проверяю какие есть права    
 
+![image](https://github.com/user-attachments/assets/35d99aa7-68f0-4683-a5a7-83d9191a92c5)
 
-
+пользователь kent может смотреть поды и логи, но не сервисы или деплои к примеру
 
 
 
