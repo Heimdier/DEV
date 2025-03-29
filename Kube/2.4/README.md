@@ -34,6 +34,20 @@ kubectl config set-credentials kent \
 7. Задаем контекст для пользователя   
 `kubectl config set-context kent-context --cluster=microk8s-cluster --user=kent`   
 
+![image](https://github.com/user-attachments/assets/d2b7b278-7292-498c-828e-3b78c72b4955)
+
+8. проверяем что в .kube/config появился новый юзер kent и контекст
+![image](https://github.com/user-attachments/assets/26f4c353-89b3-432c-b3e2-3080fab2240c)
+
+
+
+
+   
+
+
+
+
+
 
 [deploy-nginx](https://github.com/Heimdier/DEV/blob/main/Kube/1.5./deploy-nginx.yml)
 
