@@ -1,12 +1,5 @@
 ### Задание 1. Создайте конфигурацию для подключения пользователя
 
-   - Создайте и подпишите SSL-сертификат для подключения к кластеру.
-   - Настройте конфигурационный файл kubectl для подключения.
-   - Создайте роли и все необходимые настройки для пользователя.
-   - Предусмотрите права пользователя. Пользователь может просматривать логи подов и их конфигурацию (`kubectl logs pod <pod_id>`, `kubectl describe pod <pod_id>`).
-
-
-
 1. генерируем закрытый ключ RSA   
  `openssl genrsa -out kent.key 2048`   
 
@@ -50,17 +43,9 @@ kubectl config set-credentials kent \
 
 пользователь kent может смотреть поды и логи, но не сервисы или деплои к примеру
 
+10. переключаюсь обратно на админский контекст - проверяю
+    
+![image](https://github.com/user-attachments/assets/e5381462-3527-4b24-86b3-def1ad57df9f)
 
 
-[role-bind](https://github.com/Heimdier/DEV/blob/main/Kube/2.4/role-bind.yml)
-[role-pods](https://github.com/Heimdier/DEV/blob/main/Kube/2.4/role-pods.yml)
 
-#### Создал Deployment приложения backend из образа multitool
-
-```shell
-
-
-  encode base 64:
-  echo `dsfa;lksjals` | base64 --decode
-
-```
