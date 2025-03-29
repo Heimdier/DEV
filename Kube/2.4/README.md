@@ -7,17 +7,17 @@
 5. Предоставьте манифесты и скриншоты и/или вывод необходимых команд.
 
 
-1. генерируем закрытый ключ RSA
- `openssl genrsa -out kent.key 2048`
+1. генерируем закрытый ключ RSA   
+ `openssl genrsa -out kent.key 2048`   
 
-2. создаем зашифрованный запрос на подпись сертификата на основе ключа (CN — имя пользователя, O — группа)
- `openssl req -new -key kent.key -out kent.csr -subj "/CN=kent/O=opa"`
+2. создаем зашифрованный запрос на подпись сертификата на основе ключа (CN — имя пользователя, O — группа)   
+ `openssl req -new -key kent.key -out kent.csr -subj "/CN=kent/O=opa"`   
 
-3. забираем с кластера корневой сертификат CA.crt и приватный ключ CA.key отсюда:
-`/var/snap/microk8s/current/certs/`   
+3. забираем с кластера корневой сертификат CA.crt и приватный ключ CA.key отсюда:   
+`/var/snap/microk8s/current/certs/`    
 
-4. создаем самоподписанный сертификат на основе CA.crt, CA.key и запроса kent.csr
-` openssl x509 -req -in kent.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out kent.crt -days 365`
+4. создаем самоподписанный сертификат на основе CA.crt, CA.key и запроса kent.csr   
+` openssl x509 -req -in kent.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out kent.crt -days 365`   
 
 ![image](https://github.com/user-attachments/assets/a97fe2f2-6d61-462f-a0a9-32e55e4bbb46)
 
