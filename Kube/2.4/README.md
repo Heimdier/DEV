@@ -4,7 +4,7 @@
 2. Настройте конфигурационный файл kubectl для подключения.
 3. Создайте роли и все необходимые настройки для пользователя.
 4. Предусмотрите права пользователя. Пользователь может просматривать логи подов и их конфигурацию (`kubectl logs pod <pod_id>`, `kubectl describe pod <pod_id>`).
-5. Предоставьте манифесты и скриншоты и/или вывод необходимых команд.
+
 
 
 1. генерируем закрытый ключ RSA   
@@ -17,12 +17,22 @@
 `/var/snap/microk8s/current/certs/`    
 
 4. создаем самоподписанный сертификат на основе CA.crt, CA.key и запроса kent.csr   
-` openssl x509 -req -in kent.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out kent.crt -days 365`   
+`openssl x509 -req -in kent.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out kent.crt -days 365`   
 
-![image](https://github.com/user-attachments/assets/a97fe2f2-6d61-462f-a0a9-32e55e4bbb46)
+![image](https://github.com/user-attachments/assets/6e311382-16dd-40dd-a2ef-457716ec4c6a)
 
+5. подключаем RBAC   
+`microk8s enable rbac`    
 
+6. создаем пользователя kent в кубере с указанием сертификата и ключа:   
+```shell
+kubectl config set-credentials kent \
+--client-certificate=kent.crt \
+--client-key=kent.key
+```
 
+7.Задаем контекст для пользователя   
+`kubectl config set-context kent-context --cluster=microk8s-cluster --user=kent`   
 
 
 [deploy-nginx](https://github.com/Heimdier/DEV/blob/main/Kube/1.5./deploy-nginx.yml)
