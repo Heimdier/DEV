@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}-back
+spec:
+  replicas: {{ .Values.multi.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ .Release.Name }}-back
+  template:
+    metadata:
+      labels:
+        app: {{ .Release.Name }}-back
+    spec:
+      containers:
+      - name: back
+        image: "{{ .Values.multi.image.repository }}:{{ .Values.multi.image.tag }}"
+        ports:
+        - containerPort: {{ .Values.multi.containerPort }}
+        env:
+        - name: HTTP_PORT
+          value: {{ .Values.multi.HTTP_PORT | quote }}         
