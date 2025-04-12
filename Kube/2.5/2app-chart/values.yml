@@ -1,0 +1,20 @@
+nginx:
+  replicaCount: 2
+  image:
+    repository: nginx
+    tag: "latest"
+
+multi:
+  replicaCount: 2
+  image:
+    repository: wbitt/network-multitool
+    tag: extra
+  containerPort: 8888
+  HTTP_PORT: "8888"
+  
+  
+service:
+  # This sets the service type more information can be found here: https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types
+  type: ClusterIP
+  # This sets the ports more information can be found here: https://kubernetes.io/docs/concepts/services-networking/service/#field-spec-ports
+  port: 80
