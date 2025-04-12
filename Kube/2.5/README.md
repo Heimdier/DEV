@@ -17,13 +17,13 @@
 3. в [values](https://github.com/Heimdier/DEV/blob/main/Kube/2.5/values.yml) описал переменные для подстановки
 ```shell
 nginx:
-  replicaCount: 2
+  replicaCount: 1
   image:
     repository: nginx
     tag: "latest"
 
 multi:
-  replicaCount: 2
+  replicaCount: 1
   image:
     repository: wbitt/network-multitool
     tag: alpine-extra
@@ -32,7 +32,13 @@ multi:
 ```
 
 4. в templates описал два деплоя [dep-nginx](https://github.com/Heimdier/DEV/blob/main/Kube/2.5/templates/dep-nginx.yml) и  [dep-multi](https://github.com/Heimdier/DEV/blob/main/Kube/2.5/templates/dep-multi.yml)
-5. 
+5. Установил чарт `helm install netology ./2app-chart`
+
+![image](https://github.com/user-attachments/assets/2f8836fe-447b-4f03-914e-2d6235b8d3c0)   
+
+
+
+
 
 
 
