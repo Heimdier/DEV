@@ -17,13 +17,13 @@
 3. в [values](https://github.com/Heimdier/DEV/blob/main/Kube/2.5/values.yml) описал переменные для подстановки
 ```shell
 nginx:
-  replicaCount: 1
+  replicaCount: 2
   image:
     repository: nginx
     tag: "latest"
 
 multi:
-  replicaCount: 1
+  replicaCount: 2
   image:
     repository: wbitt/network-multitool
     tag: alpine-extra
@@ -35,6 +35,25 @@ multi:
 5. Установил чарт `helm install netology ./2app-chart`
 
 ![image](https://github.com/user-attachments/assets/2f8836fe-447b-4f03-914e-2d6235b8d3c0)   
+![image](https://github.com/user-attachments/assets/2f17c57d-09fe-478d-98c9-718235315a11)    
+
+6. поменял образ multitool на extra и сдепал upgrade чарта   
+```shell
+multi:
+  replicaCount: 2
+  image:
+    repository: wbitt/network-multitool
+    tag: alpine-extra
+  containerPort: 8888
+  HTTP_PORT: "8888"
+```
+   
+![image](https://github.com/user-attachments/assets/f3dcd2ad-fbbc-45d6-831d-2304cdf5b746)    
+![image](https://github.com/user-attachments/assets/8d88a2cb-ec66-4b50-bd1d-89951e0e2e59)
+
+
+
+
 
 
 
