@@ -36,7 +36,7 @@ multi:
   HTTP_PORT: "8888"
 ```
 
-4. в templates описал два деплоя [dep-nginx](https://github.com/Heimdier/DEV/blob/main/Kube/2.5/2app-chart/templates/dep-nginx.yml) и  [dep-multi](https://github.com/Heimdier/DEV/blob/main/Kube/2.5/2app-chart/templates/dep-multi.yml)
+4. В templates описал два деплоя [dep-nginx](https://github.com/Heimdier/DEV/blob/main/Kube/2.5/2app-chart/templates/dep-nginx.yml) и  [dep-multi](https://github.com/Heimdier/DEV/blob/main/Kube/2.5/2app-chart/templates/dep-multi.yml)
 5. Установил чарт `helm install netology ./2app-chart`
 
 ![image](https://github.com/user-attachments/assets/2f8836fe-447b-4f03-914e-2d6235b8d3c0)   
