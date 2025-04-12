@@ -11,6 +11,7 @@
 2. Одну версию в namespace=app1, вторую версию в том же неймспейсе, третью версию в namespace=app2.
 3. Продемонстрируйте результат.
 ------
+### Задание 1. Подготовить Helm-чарт для приложения
 
 1. создал базовую структуру под чарт `helm create 2app-chart`
 2. взял два приложения nginx и multitool для упаковки в чарт
@@ -49,7 +50,10 @@ multi:
 ```
    
 ![image](https://github.com/user-attachments/assets/f3dcd2ad-fbbc-45d6-831d-2304cdf5b746)    
-![image](https://github.com/user-attachments/assets/8d88a2cb-ec66-4b50-bd1d-89951e0e2e59)
+![image](https://github.com/user-attachments/assets/8d88a2cb-ec66-4b50-bd1d-89951e0e2e59)   
+
+------
+### Задание 2. Запустить две версии в разных неймспейсах
 
 
 
