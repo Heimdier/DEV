@@ -19,7 +19,7 @@
 
 1. создал базовую структуру под чарт `helm create 2app-chart`
 2. взял два приложения nginx и multitool для упаковки в чарт
-3. в [values](https://github.com/Heimdier/DEV/blob/main/Kube/2.5/values.yml) описал переменные для подстановки
+3. в [values](https://github.com/Heimdier/DEV/blob/main/Kube/2.5/2app-chart/values.yml) описал переменные для подстановки
 ```shell
 nginx:
   replicaCount: 2
