@@ -11,6 +11,10 @@
 2. Одну версию в namespace=app1, вторую версию в том же неймспейсе, третью версию в namespace=app2.
 3. Продемонстрируйте результат.
 ------
+
+
+
+
 ### Задание 1. Подготовить Helm-чарт для приложения
 
 1. создал базовую структуру под чарт `helm create 2app-chart`
@@ -64,29 +68,11 @@ kubectl create namespace app2
 
 2. Создал две версии приложения в одном неймспейс `namespace app1`
    
-   ![image](https://github.com/user-attachments/assets/df14daf4-1050-46f2-abf0-02babae37fd2)
+ ![image](https://github.com/user-attachments/assets/df14daf4-1050-46f2-abf0-02babae37fd2)
 
 3. И одну версию в другом неймспейс `namespace app2`
 
-   ![image](https://github.com/user-attachments/assets/f58d533a-7949-4929-a3f1-348a4ef922be)
+![image](https://github.com/user-attachments/assets/f58d533a-7949-4929-a3f1-348a4ef922be)
 
 
 
-
-
-
-
-
-
-
-[deploy-nginx](https://github.com/Heimdier/DEV/blob/main/Kube/1.5./deploy-nginx.yml)
-
-#### Создал Deployment приложения backend из образа multitool
-
-```shell
-
-
-  encode base 64:
-  echo `dsfa;lksjals` | base64 --decode
-
-```
