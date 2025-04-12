@@ -12,8 +12,11 @@
 3. Продемонстрируйте результат.
 
 
-
-
+1. создал базовую структуру под чарт `helm create 2app-chart`
+2. взял два приложения nginx и multitool для упаковки в чарт
+3. в [values](https://github.com/Heimdier/DEV/blob/main/Kube/2.5/values.yml) описал переменные для подстановки
+4. в templates описал два деплоя [dep-nginx](https://github.com/Heimdier/DEV/blob/main/Kube/2.5/dep-nginx.yml) и  [dep-multi](https://github.com/Heimdier/DEV/blob/main/Kube/2.5/dep-multi.yml)
+5. 
 
 
 
