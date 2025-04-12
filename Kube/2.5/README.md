@@ -55,7 +55,20 @@ multi:
 ------
 ### Задание 2. Запустить две версии в разных неймспейсах
 
+1. создал два namespace
+   
+```
+kubectl create namespace app1
+kubectl create namespace app2
+```
 
+2. Создал две версии приложения в одном неймспейс `namespace app1`
+   
+   ![image](https://github.com/user-attachments/assets/df14daf4-1050-46f2-abf0-02babae37fd2)
+
+3. И одну версию в другом неймспейс `namespace app2`
+
+   ![image](https://github.com/user-attachments/assets/f58d533a-7949-4929-a3f1-348a4ef922be)
 
 
 
