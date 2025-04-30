@@ -24,7 +24,7 @@ resource "yandex_vpc_subnet" "develop_b" {
 #-------------------------------------------------------------------
 
 module "test-vm" {
-  source         = "git::https://github.com/Heimdier/yandex_compute_instance.git?ref=main"
+  source         = "git::https://github.com/Heimdier/yandex_compute_instance.git?ref=86ebea2f6cd4a1798c233a9025783da2048f8509"
   env_name       = var.vpc_name1
 #  network_id     = yandex_vpc_network.develop.id
   network_id	 = module.vpc.netko.id
@@ -49,7 +49,7 @@ module "test-vm" {
 }
 
 module "example-vm" {
-  source         = "git::https://github.com/Heimdier/yandex_compute_instance.git?ref=main"
+  source         = "git::https://github.com/Heimdier/yandex_compute_instance.git?ref=86ebea2f6cd4a1798c233a9025783da2048f8509"
   env_name       = var.vpc_name2
 #  network_id     = yandex_vpc_network.develop.id
   network_id     = module.vpc.netko.id
